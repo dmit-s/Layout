@@ -1,0 +1,23 @@
+.about {
+  background-image: url("/assets/images/about-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 200px;
+}
+
+.about__title {
+  color: #ff8d30;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about__desc {
+  font-weight: 300 !important;
+  margin-bottom: 20px;
+}
+
+.about__subtitle {
+  font-weight: 700;
+}

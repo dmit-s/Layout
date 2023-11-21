@@ -1,0 +1,14 @@
+.tours {
+  padding-top: 70px;
+  background-color: #edeff6;
+  color: #444444;
+  font-weight: 300;
+}
+
+.tours__title {
+  margin-bottom: 20px;
+}
+
+.tours__card {
+  width: 100%;
+}

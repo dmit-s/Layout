@@ -7,6 +7,8 @@
 @import "./blocks/nav/__nav.css";
 @import "./blocks/travel/__travel.css";
 @import "./blocks/contact-buttons/__contact-buttons.css";
+@import "/blocks/about/__about.css";
+@import "/blocks/tours/__tours.css";
 
 *,
 *::before,
@@ -37,6 +39,13 @@ a {
 body {
   color: #fff;
   background-color: #192144;
+}
+
+/* title */
+.title {
+  color: #ff8d30;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /* burger */
