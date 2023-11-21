@@ -1,6 +1,7 @@
 @import "./normalize.css";
 
 @import "./blocks/container/__container.css";
+@import "/blocks/buttons.css";
 @import "./blocks/header/__header.css";
 @import "./blocks/burger/__burger.css";
 @import "./blocks/menu/__menu.css";
@@ -9,6 +10,7 @@
 @import "./blocks/contact-buttons/__contact-buttons.css";
 @import "/blocks/about/__about.css";
 @import "/blocks/tours/__tours.css";
+@import "/blocks/companions/__companions.css";
 
 *,
 *::before,
@@ -35,6 +37,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 
 body {
   color: #fff;
