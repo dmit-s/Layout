@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Traveller</title>
+  </head>
+  <body>
+    <div class="background">
+      <header class="header">
+        <div class="header__container container">
+          <a href="#" class="header__logo">
+            <picture>
+              <source
+                srcset="./assets/images/logo_desktop.png"
+                media="(min-width: 768px)"
+              />
+              <img src="./assets/images/logo_mobile.png" alt="logo" />
+            </picture>
+          </a>
+          <label class="menu-btn">
+            <input type="checkbox" />
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+          </label>
+
+          <div class="menu">
+            <nav class="nav">
+              <a href="#" class="nav__link">О сервисе</a>
+              <a href="#" class="nav__link">Направления</a>
+              <a href="#" class="nav__link">Попутчики</a>
+            </nav>
+            <button class="menu__btn btn--primary">Авторизация</button>
+            <div class="menu__social">
+              <a href="#" class="menu__social-link">
+                <svg>
+                  <use href="assets/icons/social.svg#facebook" />
+                </svg>
+              </a>
+              <a href="#" class="menu__social-link">
+                <svg>
+                  <use xlink:href="assets/icons/social.svg#vk" />
+                </svg>
+              </a>
+              <a href="#" class="menu__social-link">
+                <svg>
+                  <use xlink:href="assets/icons/social.svg#inst" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="travel">
+        <div class="container">
+          <div class="travel-top">
+            <h1 class="travel__title">В путешествие с крутыми попутчиками!</h1>
+            <div class="travel__contact-buttons contact-buttons">
+              <a href="#" class="contact-buttons__link">
+                <svg>
+                  <use xlink:href="assets/icons/contact.svg#call" />
+                </svg>
+              </a>
+              <a href="#" class="contact-buttons__link">
+                <svg>
+                  <use xlink:href="assets/icons/contact.svg#email" />
+                </svg>
+              </a>
+              <button class="contact-buttons__btn btn--primary">
+                Авторизация
+              </button>
+            </div>
+          </div>
+
+          <div class="travel-bottom">
+            <div class="travel__report">
+              <p class="travel__report-text">
+                «Лучшее приложение, что я видел в жизни!»
+              </p>
+              <p class="travel__report-author">
+                Мурат Эльтазин главный редактор газеты «гаджетлайф»
+              </p>
+            </div>
+            <ul class="travel__list">
+              <li class="travel__list-item">
+                <p>Выберите направление</p>
+                <span>1</span>
+              </li>
+              <li class="travel__list-item">
+                <p>Изучите идеи путешественников</p>
+                <span>2</span>
+              </li>
+              <li class="travel__list-item">
+                <p>Находите тех, кто похож на вас</p>
+                <span>3</span>
+              </li>
+              <li class="travel__list-item">
+                <p>Путешествуйте вместе!</p>
+                <span>4</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

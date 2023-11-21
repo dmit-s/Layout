@@ -1,0 +1,59 @@
+.travel {
+  margin-top: 60px;
+}
+.travel__title {
+  text-align: center;
+  font-size: 36px;
+}
+.travel-top {
+  position: relative;
+  height: 95vh;
+}
+.travel__contact-buttons {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -100px);
+}
+
+.travel__report {
+  max-width: 165px;
+  margin-bottom: 30px;
+}
+
+.travel__report-text {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.travel__report-author {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.travel__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.travel__list-item {
+  padding: 24px 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  color: #161c35;
+  max-width: 270px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.travel__list-item p {
+  max-width: 160px;
+}
+
+.travel__list-item span {
+  color: #fff;
+}

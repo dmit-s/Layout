@@ -1,0 +1,39 @@
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-buttons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffbd30;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50px;
+}
+
+.contact-buttons__link svg {
+  fill: #161c35;
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+.contact-buttons__link:hover {
+  background-color: #ff8d30;
+}
+
+.contact-buttons__btn {
+  min-width: 190px;
+  height: 40px;
+  background-color: #ffbd30;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+
+.contact-buttons__btn:hover {
+  background-color: #ff8d30;
+}
