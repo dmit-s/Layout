@@ -1,6 +1,7 @@
 .travel {
-  margin-top: 60px;
-  margin-bottom: 40px;
+  padding-top: 48px;
+  padding-bottom: 20px;
+  background-color: #161C35;
 }
 .travel__title {
   text-align: center;
@@ -8,14 +9,9 @@
 }
 .travel-top {
   position: relative;
-  height: 95vh;
 }
-.travel__contact-buttons {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -100px);
+.travel-bottom {
+  padding-top: 48px;
 }
 
 .travel__report {
@@ -51,6 +47,7 @@
   font-size: 18px;
   font-weight: 700;
   font-size: 18px;
+  border-radius: 15px 15px 0 0;
 }
 
 .travel__list-item:nth-child(1) {
@@ -58,12 +55,15 @@
 }
 .travel__list-item:nth-child(2) {
   background-color: #ffa530;
+  transform: translateY(-12px);
 }
 .travel__list-item:nth-child(3) {
   background-color: #ffbd30;
+  transform: translateY(-24px);
 }
 .travel__list-item:nth-child(4) {
   background-color: #ffd74b;
+  transform: translateY(-36px);
 }
 
 .travel__list-item p {
@@ -72,4 +72,27 @@
 
 .travel__list-item span {
   color: #fff;
+}
+
+.travel-top__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.travel-top__img-container {
+  position: relative;
+}
+.travel-top__img-container::before {
+  content: url("/assets/images/traveller-illustration-mobile.png");
+  position: absolute;
+  bottom: 0;
+  right: 48px;
+}
+.travel-top__img-container img {
+  width: 100%;
 }

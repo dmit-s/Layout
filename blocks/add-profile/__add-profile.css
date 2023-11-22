@@ -1,0 +1,61 @@
+.add-profile{
+    padding: 60px 0 40px;
+    background-color: #E6E8F1;
+    position: relative;
+    top: -60px;
+    z-index: 3;
+    border-radius: 0 0 20px 20px;
+}
+
+.add-profile__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.add-profile__title{
+    padding-right: 20px;
+}
+
+.rates-list{
+    margin-bottom: 30px;
+}
+
+.rates-list__item{
+    padding: 13px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.rates-list__item-desc{
+    color: #444444;
+    font-weight: 300;
+
+}
+
+.rates-list__item-number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}
+.rates-list__item:nth-child(1) .rates-list__item-number{
+    background-color: #FF8D30;
+}
+.rates-list__item:nth-child(2) .rates-list__item-number{
+    background-color: #FFBD30;
+}
+.rates-list__item:nth-child(3) .rates-list__item-number{
+    background-color: #FFD74B;
+}
+
+
+.add-profile__btn{
+    color: #132576;
+    font-weight: 700;
+}

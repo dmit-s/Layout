@@ -4,4 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #161C35;
+    position: relative;
+}
+
+.header__logo picture{
+    position: relative;
+    z-index: 1000;
 }

@@ -1,3 +1,19 @@
-.menu{
-    display: none;
+.menu {
+  display: none;
+  padding: 50px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__btn {
+  min-width: 270px;
+  margin-bottom: 60px;
 }

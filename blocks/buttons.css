@@ -7,8 +7,20 @@ button {
   cursor: pointer;
 }
 
-/* btn show all */
 
+/* primary btn */
+.btn--primary{
+  min-width: 190px;
+  height: 40px;
+  background-color: #ffbd30;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+
+/* btn show all */
 .btn--show-all {
   padding: 22px;
   display: flex;
@@ -21,7 +33,45 @@ button {
   fill: #1d2e5b;
   font-weight: 700;
 }
-
 .btn--show-all:hover {
   background-color: #ffbd30;
+}
+
+/* group-buttons */
+/* #1 */
+.group-buttons-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group-buttons-primary__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffbd30;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50px;
+}
+.group-buttons-primary__link svg {
+  fill: #161c35;
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+.group-buttons-primary__link:hover {
+  background-color: #ff8d30;
+}
+.group-buttons-primary__btn {
+  min-width: 190px;
+  height: 40px;
+  background-color: #ffbd30;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+.group-buttons-primary__btn:hover {
+  background-color: #ff8d30;
 }
