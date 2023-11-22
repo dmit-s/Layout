@@ -7,73 +7,76 @@
     <title>Traveller</title>
   </head>
   <body>
-    <div class="background">
-      <header class="header">
-        <div class="header__container container">
-          <a href="#" class="header__logo">
-            <picture>
-              <source
-                srcset="./assets/images/logo_desktop.png"
-                media="(min-width: 768px)"
-              />
-              <img src="./assets/images/logo_mobile.png" alt="logo" />
-            </picture>
-          </a>
-          <label class="menu-btn">
-            <input type="checkbox" />
-            <span class="menu-btn__line"></span>
-            <span class="menu-btn__line"></span>
-          </label>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo">
+          <picture>
+            <source
+              srcset="./assets/images/logo_desktop.png"
+              media="(min-width: 768px)"
+            />
+            <img src="./assets/images/logo_mobile.png" alt="logo" />
+          </picture>
+        </a>
+        <label class="menu-btn">
+          <input id="menu-toggler" type="checkbox" />
+          <span class="menu-btn__line"></span>
+          <span class="menu-btn__line"></span>
+        </label>
 
-          <div class="menu">
-            <nav class="nav">
-              <a href="#" class="nav__link">О сервисе</a>
-              <a href="#" class="nav__link">Направления</a>
-              <a href="#" class="nav__link">Попутчики</a>
-            </nav>
-            <button class="menu__btn btn--primary">Авторизация</button>
-            <div class="menu__social">
-              <a href="#" class="menu__social-link">
-                <svg>
-                  <use href="assets/icons/social.svg#facebook" />
-                </svg>
-              </a>
-              <a href="#" class="menu__social-link">
-                <svg>
-                  <use xlink:href="assets/icons/social.svg#vk" />
-                </svg>
-              </a>
-              <a href="#" class="menu__social-link">
-                <svg>
-                  <use xlink:href="assets/icons/social.svg#inst" />
-                </svg>
-              </a>
-            </div>
+        <div class="menu">
+          <nav class="nav">
+            <a href="#" class="nav__link">О сервисе</a>
+            <a href="#" class="nav__link">Направления</a>
+            <a href="#" class="nav__link">Попутчики</a>
+          </nav>
+          <button class="menu__btn btn--primary">Авторизация</button>
+          <div class="menu__social social-links">
+            <a href="#" class="menu__social-link social-links__link">
+              <svg viewBox="0 0 11 21">
+                <use href="assets/icons/social.svg#facebook" />
+              </svg>
+            </a>
+            <a href="#" class="menu__social-link social-links__link">
+              <svg viewBox="0 0 23 12">
+                <use xlink:href="assets/icons/social.svg#vk" />
+              </svg>
+            </a>
+            <a href="#" class="menu__social-link social-links__link">
+              <svg viewBox="0 0 18 18">
+                <use xlink:href="assets/icons/social.svg#inst" />
+              </svg>
+            </a>
           </div>
         </div>
-      </header>
-
+      </div>
+    </header>
+    <main>
       <section class="travel">
-        <div class="container">
-          <div class="travel-top">
+        <div class="travel-top">
+          <div class="travel-top__img-container">
+            <img src="/assets/images/globe-back-mobile.jpg" alt="asdasd" />
+          </div>
+          <div class="travel-top__content">
             <h1 class="travel__title">В путешествие с крутыми попутчиками!</h1>
-            <div class="travel__contact-buttons contact-buttons">
-              <a href="#" class="contact-buttons__link">
+            <div class="travel_buttons group-buttons-primary">
+              <a href="#" class="group-buttons-primary__link">
                 <svg>
                   <use xlink:href="assets/icons/contact.svg#call" />
                 </svg>
               </a>
-              <a href="#" class="contact-buttons__link">
+              <a href="#" class="group-buttons-primary__link">
                 <svg>
                   <use xlink:href="assets/icons/contact.svg#email" />
                 </svg>
               </a>
-              <button class="contact-buttons__btn btn--primary">
+              <button class="group-buttons-primary__btn btn--primary">
                 Авторизация
               </button>
             </div>
           </div>
-
+        </div>
+        <div class="container">
           <div class="travel-bottom">
             <div class="travel__report">
               <p class="travel__report-text">
@@ -130,7 +133,7 @@
             <div class="tours__card">
               <div class="tours__card-img-container">
                 <img
-                  src="./assets/images/thailand-pic-mobile.jpg"
+                  src="./assets/images//tours/thailand-mobile.jpg"
                   alt="Place"
                 />
               </div>
@@ -160,14 +163,14 @@
             <div class="tours__card">
               <div class="tours__card-img-container">
                 <img
-                  src="./assets/images/thailand-pic-mobile.jpg"
+                  src="./assets/images/tours/france-mobile.jpg"
                   alt="Place"
                 />
               </div>
               <div class="tours__card-body">
                 <div class="tours__card-desc">
-                  <p class="tours__card-title">Таиланд</p>
-                  <p class="tours__card-subtitle">Джунгли зовут!</p>
+                  <p class="tours__card-title">Франция</p>
+                  <p class="tours__card-subtitle">Трэ бьен, манифик!</p>
                 </div>
                 <div class="tours__card-people">
                   <svg
@@ -183,21 +186,18 @@
                       fill="#192144"
                     />
                   </svg>
-                  18321
+                  12518
                 </div>
               </div>
             </div>
             <div class="tours__card">
               <div class="tours__card-img-container">
-                <img
-                  src="./assets/images/thailand-pic-mobile.jpg"
-                  alt="Place"
-                />
+                <img src="./assets/images/tours/czech-mobile.jpg" alt="Place" />
               </div>
               <div class="tours__card-body">
                 <div class="tours__card-desc">
-                  <p class="tours__card-title">Таиланд</p>
-                  <p class="tours__card-subtitle">Джунгли зовут!</p>
+                  <p class="tours__card-title">Чехия</p>
+                  <p class="tours__card-subtitle">Закоулки старой Европы</p>
                 </div>
                 <div class="tours__card-people">
                   <svg
@@ -213,7 +213,7 @@
                       fill="#192144"
                     />
                   </svg>
-                  18321
+                  5326
                 </div>
               </div>
             </div>
@@ -251,13 +251,29 @@
           <div class="companions__cards">
             <div class="companions__card">
               <div class="companions__card-img-container">
-                <img src="/assets/images/companion-1.png" alt="Person Image" />
+                <img
+                  src="/assets/images/companions/person-1-mobile.png"
+                  alt="Person Image"
+                />
+                <svg viewBox="0 0 60 60">
+                  <use xlink:href="assets/icons/levels.svg#level-99"></use>
+                </svg>
               </div>
               <div class="companions__card-body">
                 <div class="companions__card-flags">
-                  <span></span><span></span><span></span>
+                  <img
+                    src="/assets/images/flags/sri-lanka.png"
+                    alt="Sri Lanka"
+                  />
+                  <img src="/assets/images/flags/thailand.png" alt="Thailand" />
+                  <img
+                    src="/assets/images/flags/seychelles.png"
+                    alt="Seychelles"
+                  />
                 </div>
-                <p class="companions__card-name" data-clr="coral">Таня Фирсова</p>
+                <p class="companions__card-name" data-clr="coral">
+                  Таня Фирсова
+                </p>
                 <div class="companions__card-tags">
                   <span class="companions__card-tag"> #ЗОЖ </span>
                   <span class="companions__card-tag"> #ПП </span>
@@ -267,22 +283,63 @@
                   <span class="companions__card-tag"> #смузи </span>
                 </div>
                 <div class="companions__card-icons">
-                  <svg viewBox="0 0 21 23">
-                    <use xlink:href="assets/icons/companions-icons.svg#plane"/>
+                  <svg class="active" viewBox="0 0 21 23">
+                    <use xlink:href="assets/icons/companions-icons.svg#plane" />
                   </svg>
                   <svg viewBox="0 0 18 21">
-                    <use xlink:href="assets/icons/companions-icons.svg#bus"/>
+                    <use xlink:href="assets/icons/companions-icons.svg#bus" />
                   </svg>
                   <svg viewBox="0 0 25 24">
-                    <use xlink:href="assets/icons/companions-icons.svg#bicycle"/>
+                    <use
+                      xlink:href="assets/icons/companions-icons.svg#bicycle"
+                    />
                   </svg>
                   <svg viewBox="0 0 21 24">
-                    <use xlink:href="assets/icons/companions-icons.svg#run"/>
+                    <use xlink:href="assets/icons/companions-icons.svg#run" />
                   </svg>
                 </div>
-
               </div>
-
+            </div>
+            <div class="companions__card">
+              <div class="companions__card-img-container">
+                <img
+                  src="/assets/images/companions/person-2-mobile.png"
+                  alt="Person Image"
+                />
+                <svg viewBox="0 0 60 60">
+                  <use xlink:href="assets/icons/levels.svg#level-80"></use>
+                </svg>
+              </div>
+              <div class="companions__card-body">
+                <div class="companions__card-flags">
+                  <img src="/assets/images/flags/belgium.png" alt="Belgium" />
+                  <img src="/assets/images/flags/czech.png" alt="Czech" />
+                </div>
+                <p class="companions__card-name" data-clr="green">Петя Демин</p>
+                <div class="companions__card-tags">
+                  <span class="companions__card-tag"> #бургер </span>
+                  <span class="companions__card-tag"> #бар </span>
+                  <span class="companions__card-tag"> #футбол </span>
+                  <span class="companions__card-tag"> #концерт </span>
+                  <span class="companions__card-tag"> #крафт </span>
+                </div>
+                <div class="companions__card-icons">
+                  <svg class="active" viewBox="0 0 21 23">
+                    <use xlink:href="assets/icons/companions-icons.svg#plane" />
+                  </svg>
+                  <svg class="active" viewBox="0 0 18 21">
+                    <use xlink:href="assets/icons/companions-icons.svg#bus" />
+                  </svg>
+                  <svg viewBox="0 0 25 24">
+                    <use
+                      xlink:href="assets/icons/companions-icons.svg#bicycle"
+                    />
+                  </svg>
+                  <svg class="active" viewBox="0 0 21 24">
+                    <use xlink:href="assets/icons/companions-icons.svg#run" />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
           <button class="companions__show-all btn--show-all">
@@ -302,6 +359,49 @@
           </button>
         </div>
       </section>
-    </div>
+      <section class="add-profile">
+        <div class="add-profile__container container">
+          <div class="add-profile__header">
+            <h2 class="add-profile__title title">Добавьте свой профиль</h2>
+            <img
+              class="add-profile__img"
+              src="/assets/images/rates.png"
+              alt="Rates"
+            />
+          </div>
+          <div class="rates-list">
+            <div class="rates-list__item">
+              <div class="rates-list__item-body">
+                <p class="rates-list__item-desc">Базовое размещение</p>
+                <p class="rates-list__item-desc">Бесплатно</p>
+              </div>
+              <div class="rates-list__item-number">
+                <span>1</span>
+              </div>
+            </div>
+            <div class="rates-list__item">
+              <div class="rates-list__item-body">
+                <p class="rates-list__item-desc">Вывод на первых позициях</p>
+                <p class="rates-list__item-desc">99 руб./мес</p>
+              </div>
+              <div class="rates-list__item-number">
+                <span>2</span>
+              </div>
+            </div>
+            <div class="rates-list__item">
+              <div class="rates-list__item-body">
+                <p class="rates-list__item-desc">Кастомный цвет карточки</p>
+                <p class="rates-list__item-desc">59 руб./мес</p>
+              </div>
+              <div class="rates-list__item-number">
+                <span>3</span>
+              </div>
+            </div>
+          </div>
+          <button class="add-profile__btn">Показать тарифы для бизнеса</button>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
   </body>
 </html>

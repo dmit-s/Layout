@@ -3,14 +3,16 @@
 @import "./blocks/container/__container.css";
 @import "/blocks/buttons.css";
 @import "./blocks/header/__header.css";
-@import "./blocks/burger/__burger.css";
+@import "./blocks/menu-btn/__menu-btn.css";
 @import "./blocks/menu/__menu.css";
+@import "/blocks/social-links/__social-links.css";
 @import "./blocks/nav/__nav.css";
 @import "./blocks/travel/__travel.css";
 @import "./blocks/contact-buttons/__contact-buttons.css";
 @import "/blocks/about/__about.css";
 @import "/blocks/tours/__tours.css";
 @import "/blocks/companions/__companions.css";
+@import "/blocks/add-profile/__add-profile.css";
 
 *,
 *::before,
@@ -38,10 +40,9 @@ a {
   text-decoration: none;
 }
 
-
 body {
   color: #fff;
-  background-color: #192144;
+
 }
 
 /* title */
@@ -51,58 +52,6 @@ body {
   font-weight: 700;
 }
 
-/* burger */
-.menu-btn {
-  position: relative;
-  cursor: pointer;
-}
-.menu-btn input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-}
-.menu-btn input:checked ~ .menu-btn__line {
-  transform: translate(0px, 2px) rotate(-45deg);
-}
-.menu-btn input:checked + .menu-btn__line {
-  transform: translate(0px, 5px) rotate(45deg);
-  margin: 0;
-}
-.menu-btn__line {
-  content: " ";
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-}
-.menu-btn__line:not(:last-child) {
-  margin-bottom: 5px;
-}
 
-/* bg-image */
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-image: url("/assets/images/globe-back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.background::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 192px;
-  height: 255px;
-  background-image: url("/assets/images/traveller-illustration-mobile.png");
-  background-repeat: no-repeat;
-  z-index: 1;
-}
+
+
