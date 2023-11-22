@@ -1,15 +1,18 @@
-.social-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-links__link:not(:last-child){
-    margin-right: 25px;
+.social-links__link:hover {
+  opacity: 0.5;
 }
 
-.social-links__link svg{
-    width: 22px;
-    height: 22px;
+.social-links__link:not(:last-child) {
+  margin-right: 25px;
+}
+
+.social-links__link svg {
+  width: 22px;
+  height: 22px;
 }

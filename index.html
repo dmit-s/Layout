@@ -10,13 +10,19 @@
     <header class="header">
       <div class="header__container container">
         <a href="#" class="header__logo">
-          <picture>
+          <svg class="header__logo-mobile" viewBox="0 0 96 15">
+            <use xlink:href="/assets/icons/logo.svg#logo-mobile"></use>
+          </svg>
+          <svg class="header__logo-desktop" viewBox="0 0 168 42">
+            <use xlink:href="/assets/icons/logo.svg#logo-desktop"></use>
+          </svg>
+          <!-- <picture>
             <source
-              srcset="./assets/images/logo_desktop.png"
+              srcset="./assets/icons/logo_mobile.svg"
               media="(min-width: 768px)"
             />
-            <img src="./assets/images/logo_mobile.png" alt="logo" />
-          </picture>
+            <img src="./assets/icons/logo_mobile.svg" alt="logo" />
+          </picture> -->
         </a>
         <label class="menu-btn">
           <input id="menu-toggler" type="checkbox" />
@@ -31,6 +37,24 @@
             <a href="#" class="nav__link">Попутчики</a>
           </nav>
           <button class="menu__btn btn--primary">Авторизация</button>
+          <div class="menu__contact-links">
+            <a class="menu__contact-link" href="tel:+88005558628">
+              <div class="menu__contact-icon-container">
+                <svg viewBox="0 0 19 17">
+                  <use xlink:href="assets/icons/contact.svg#telephone"></use>
+                </svg>
+              </div>
+              8 800 555-86-28</a
+            >
+            <a class="menu__contact-link" href="mailto:mail@htmlacademy.ru">
+              <div class="menu__contact-icon-container">
+                <svg viewBox="0 0 24 25">
+                  <use xlink:href="assets/icons/contact.svg#email-2"></use>
+                </svg>
+              </div>
+              mail@htmlacademy.ru</a
+            >
+          </div>
           <div class="menu__social social-links">
             <a href="#" class="menu__social-link social-links__link">
               <svg viewBox="0 0 11 21">

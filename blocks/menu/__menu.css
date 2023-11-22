@@ -7,10 +7,38 @@
   z-index: 999;
   background-color: #fff;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.menu__contact-links {
+  margin-bottom: 40px;
+}
+
+.menu__contact-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+  margin-right: 16px;
+}
+
+.menu__contact-icon-container svg {
+  width: 25px;
+  height: 25px;
+}
+
+.menu__contact-link {
+  display: flex;
+  align-items: center;
+  color: #192144;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .menu__btn {

@@ -3,6 +3,7 @@
   cursor: pointer;
   z-index: 1000;
 }
+
 .menu-btn input {
   position: absolute;
   top: 0;
@@ -24,6 +25,9 @@
   width: 25px;
   height: 3px;
   background-color: #fff;
+}
+.header.show-menu .menu-btn__line {
+  background-color: #cccccc;
 }
 .menu-btn__line:not(:last-child) {
   margin-bottom: 5px;
