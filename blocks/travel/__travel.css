@@ -17,7 +17,6 @@
 }
 
 .travel__report {
-  max-width: 165px;
   margin-bottom: 30px;
 }
 
@@ -106,7 +105,7 @@
 @media (min-width: 768px) {
   .travel {
     background-color: #182044;
-    /* position: relative; */
+    padding-top: 180px;
   }
 
   .travel__title {
@@ -115,19 +114,25 @@
 
   .travel__report-author {
     font-size: 21px;
+    line-height: 25px;
   }
 
   .travel__report-text {
     font-size: 28px;
+    line-height: 33px;
   }
 
   .travel__buttons {
     display: none;
   }
 
+  .travel-top {
+    padding-top: 400px;
+  }
+
   .travel-bottom {
     position: relative;
-    top: -350px;
+    top: -600px;
     left: 0;
     max-width: 1400px;
     width: 100%;

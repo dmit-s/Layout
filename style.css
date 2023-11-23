@@ -1,5 +1,10 @@
+/* normalize */
 @import "./normalize.css";
 
+/* fonts */
+@import "./assets/fonts/fonts.css";
+
+/* components */
 @import "./blocks/container/__container.css";
 @import "./blocks/buttons.css";
 @import "./blocks/header/__header.css";
@@ -46,6 +51,7 @@ a {
 
 body {
   color: #fff;
+  font-family: "Blogger Sans", sans-serif;
 }
 
 /* title */
