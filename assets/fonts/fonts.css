@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("./Blogger_Sans.otf"), url("./Blogger_Sans-Light.otf"),
+    url("./Blogger_Sans-Medium.otf"), url("./Blogger_Sans-Bold.otf");
+}
