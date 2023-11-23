@@ -16,20 +16,16 @@
           <svg class="header__logo-desktop" viewBox="0 0 168 42">
             <use xlink:href="/assets/icons/logo.svg#logo-desktop"></use>
           </svg>
-          <!-- <picture>
-            <source
-              srcset="./assets/icons/logo_mobile.svg"
-              media="(min-width: 768px)"
-            />
-            <img src="./assets/icons/logo_mobile.svg" alt="logo" />
-          </picture> -->
         </a>
+
         <label class="menu-btn">
           <input id="menu-toggler" type="checkbox" />
           <span class="menu-btn__line"></span>
           <span class="menu-btn__line"></span>
         </label>
-
+        <button class="header__auth-btn btn--primary">
+          Авторизация
+        </button>
         <div class="menu">
           <nav class="nav">
             <a href="#" class="nav__link">О сервисе</a>
@@ -38,16 +34,16 @@
           </nav>
           <button class="menu__btn btn--primary">Авторизация</button>
           <div class="menu__contact-links">
-            <a class="menu__contact-link" href="tel:+88005558628">
-              <div class="menu__contact-icon-container">
+            <a class="contact-links__link" href="tel:+88005558628">
+              <div class="contact-links__icon-container">
                 <svg viewBox="0 0 19 17">
                   <use xlink:href="assets/icons/contact.svg#telephone"></use>
                 </svg>
               </div>
               8 800 555-86-28</a
             >
-            <a class="menu__contact-link" href="mailto:mail@htmlacademy.ru">
-              <div class="menu__contact-icon-container">
+            <a class="contact-links__link" href="mailto:mail@htmlacademy.ru">
+              <div class="contact-links__icon-container">
                 <svg viewBox="0 0 24 25">
                   <use xlink:href="assets/icons/contact.svg#email-2"></use>
                 </svg>
@@ -79,24 +75,33 @@
       <section class="travel">
         <div class="travel-top">
           <div class="travel-top__img-container">
-            <img src="/assets/images/globe-back-mobile.jpg" alt="asdasd" />
+            <picture>
+              <source srcset="/assets/images/globe-back-tablet.png" media="(min-width: 768px)" />
+              <img src="/assets/images/globe-back-mobile.jpg" alt="asdasd" />
+            </picture>
+            
           </div>
+
           <div class="travel-top__content">
-            <h1 class="travel__title">В путешествие с крутыми попутчиками!</h1>
-            <div class="travel_buttons group-buttons-primary">
-              <a href="#" class="group-buttons-primary__link">
-                <svg>
-                  <use xlink:href="assets/icons/contact.svg#call" />
-                </svg>
-              </a>
-              <a href="#" class="group-buttons-primary__link">
-                <svg>
-                  <use xlink:href="assets/icons/contact.svg#email" />
-                </svg>
-              </a>
-              <button class="group-buttons-primary__btn btn--primary">
-                Авторизация
-              </button>
+            <div class="travel-top__content-container container">
+              <h1 class="travel__title">
+                В путешествие<br> с крутыми<br> попутчиками!
+              </h1>
+              <div class="travel__buttons group-buttons-primary">
+                <a href="#" class="group-buttons-primary__link">
+                  <svg>
+                    <use xlink:href="assets/icons/contact.svg#call" />
+                  </svg>
+                </a>
+                <a href="#" class="group-buttons-primary__link">
+                  <svg>
+                    <use xlink:href="assets/icons/contact.svg#email" />
+                  </svg>
+                </a>
+                <button class="group-buttons-primary__btn btn--primary">
+                  Авторизация
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -112,19 +117,19 @@
             </div>
             <ul class="travel__list">
               <li class="travel__list-item">
-                <p>Выберите направление</p>
+                <p>Выберите<br> направление</p>
                 <span>1</span>
               </li>
               <li class="travel__list-item">
-                <p>Изучите идеи путешественников</p>
+                <p>Изучите идеи<br> путешественников</p>
                 <span>2</span>
               </li>
               <li class="travel__list-item">
-                <p>Находите тех, кто похож на вас</p>
+                <p>Находите тех,<br> кто похож на вас</p>
                 <span>3</span>
               </li>
               <li class="travel__list-item">
-                <p>Путешествуйте вместе!</p>
+                <p>Путешествуйте<br> вместе!</p>
                 <span>4</span>
               </li>
             </ul>
@@ -423,8 +428,208 @@
             </div>
           </div>
           <button class="add-profile__btn">Показать тарифы для бизнеса</button>
+          
+     
+
+
+
+        </div>
+
+      </section>
+      <div class="all-rates-wrapper">
+        <div class="all-rates">
+          <div class="all-rates__container container">
+            <div class="all-rates__content">
+              <h2 class="all-rates__title title">Бизнес-тарифы</h2>
+  
+              <div class="all-rates__list">
+                <div class="all-rates__list-item">
+                  <p>Реклама у блоггера</p>
+                  <p>300 000 руб./пост</p>
+                </div>
+                <div class="all-rates__list-item">
+                  <p>Накрутка подписчиков</p>
+                  <p>от 1 руб./шт.</p>
+                </div>
+                <div class="all-rates__list-item">
+                  <p>Лайки от ботов</p>
+                  <p>от 20 коп./лайк</p>
+                </div>
+                <div class="all-rates__list-item">
+                  <p>Ваш продакт-плейсмент</p>
+                  <p>Индивидуально</p>
+                </div>
+              </div>
+      
+              <button class="all-rates__close-btn">
+                Закрыть окно
+              </button>
+            </div>
+  
+          </div>
+  
+  
+  
+  
+        </div>
+      </div>
+
+      <section class="interesting">
+        <div class="interesting__container container">
+          <h2 class="interesting__title title">Заинтересовались?</h2>
+          <p class="interesting__desc">
+            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы?
+            Тогда скорее <a href="#">авторизуйтесь</a>.
+          </p>
+          <form class="interesting__form">
+            <input
+              class="interesting__form-input"
+              placeholder="E-mail"
+              type="text"
+            />
+            <button class="interesting__form-btn">
+              <svg
+                width="11"
+                height="12"
+                viewBox="0 0 11 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
+                  fill="#1D2E5B"
+                />
+              </svg>
+            </button>
+          </form>
+          <p class="interesting__desc">
+            Остались вопросы?<br />
+            Мы с радостью на них ответим!
+          </p>
+          <div class="interesting__contact-links contact-links">
+            <a class="contact-links__link" href="tel:+88005558628">
+              <div class="contact-links__icon-container">
+                <svg viewBox="0 0 19 17">
+                  <use xlink:href="assets/icons/contact.svg#telephone"></use>
+                </svg>
+              </div>
+              8 800 555-86-28</a
+            >
+            <a class="contact-links__link" href="mailto:mail@htmlacademy.ru">
+              <div class="contact-links__icon-container">
+                <svg viewBox="0 0 24 25">
+                  <use xlink:href="assets/icons/contact.svg#email-2"></use>
+                </svg>
+              </div>
+              mail@htmlacademy.ru</a
+            >
+          </div>
         </div>
       </section>
+      <section class="get-directions">
+        <div class="get-directions__container container">
+          <div class="get-directions__contact-links contact-links">
+            <a class="contact-links__link">
+              <div class="contact-links__icon-container">
+                <svg viewBox="0 0 21 21">
+                  <use xlink:href="assets/icons/contact.svg#map"></use>
+                </svg>
+              </div>
+              ул. Большая Конюшенная, 19/8</a
+            >
+          </div>
+          <button class="get-directions__btn btn--show-all">
+            Проложить маршрут
+            <svg
+              width="11"
+              height="12"
+              viewBox="0 0 11 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
+                fill="#1D2E5B"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="map">
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Санкт‑Петербург</a
+          ><a
+            href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323653%2C59.938455&utm_medium=mapframe&utm_source=maps&z=18.12"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Большая Конюшенная улица, 19/8 — Яндекс Карты</a
+          ><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=30.323653%2C59.938455&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&z=18.12"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__logo">
+            <svg class="footer__logo-mobile" viewBox="0 0 96 15">
+              <use xlink:href="/assets/icons/logo.svg#logo-mobile"></use>
+            </svg>
+            <svg class="footer__logo-desktop" viewBox="0 0 168 42">
+              <use xlink:href="/assets/icons/logo.svg#logo-desktop"></use>
+            </svg>
+          </div>
+          <div class="footer__social-links social-links">
+            <a href="#" class="social-links__link">
+              <svg viewBox="0 0 11 21">
+                <use href="assets/icons/social.svg#facebook" />
+              </svg>
+            </a>
+            <a href="#" class="social-links__link">
+              <svg viewBox="0 0 23 12">
+                <use xlink:href="assets/icons/social.svg#vk" />
+              </svg>
+            </a>
+            <a href="#" class="social-links__link">
+              <svg viewBox="0 0 18 18">
+                <use xlink:href="assets/icons/social.svg#inst" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__copyright">
+            <span class="footer__copyright-text">Разработано</span>
+            <svg
+              class="footer__copyright-icon"
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_59_40)">
+                <path
+                  d="M13.6426 0.101368L13.5 0.0859375L0 1.46443V25.5658L13.5 33.3892L27 25.5658V1.46443L13.6426 0.101368ZM25.2344 24.5885L13.5 31.3883L1.76561 24.5885V14.7093L13.4507 21.4834L13.4701 22.711L5.45351 18.0646L5.44295 19.2648L13.4894 23.9747L13.5088 25.2348L5.46408 20.5747L5.45351 21.7749L13.5 26.4847L21.6239 21.7509V20.5507V16.6484L25.2432 14.543L25.2344 24.5885ZM25.2344 13.2622L22.0147 15.1036L20.5325 15.9609L13.4666 11.8597L13.456 13.0599L19.4957 16.5593L19.4429 16.5901L19.3126 16.6638L18.4536 17.1456L13.4666 14.2583L13.456 15.4585L17.3921 17.7389L16.4591 18.3355L16.438 18.3475L13.4666 16.6416L13.456 17.8417L15.4029 18.9528L13.4155 20.1152L1.7973 13.3839L13.4349 6.56862L25.2344 13.2622ZM25.2344 12.062L13.4401 5.28786L1.76561 12.0552V3.01438L13.5 1.8142L25.2344 3.01438V12.062Z"
+                  fill="#192144"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_59_40">
+                  <rect
+                    width="27"
+                    height="33.3033"
+                    fill="white"
+                    transform="translate(0 0.0859375)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </footer>
+
     </main>
     <script src="./app.js"></script>
   </body>

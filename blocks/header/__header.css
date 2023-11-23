@@ -1,3 +1,19 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(-200%);
+  transition: .4s;
+}
+
+
+
+.header.show-header{
+  transform: translateY(0);
+}
+
 .header__container {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -8,9 +24,30 @@
   position: relative;
 }
 
+.header__auth-btn{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__container{
+    background-color: #182044;
+  }
+
+  .header__auth-btn{
+    display: inline-block;
+  }
+}
+
 .header__logo {
   max-width: 196px;
   width: 100%;
+  fill: #fff;
+  z-index: 1000;
+  transition: .4s ease-in-out;
+}
+
+.header.show-menu .header__logo{
+  fill: #192144;
 }
 
 .header__logo-mobile {

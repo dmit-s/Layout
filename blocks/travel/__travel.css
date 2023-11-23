@@ -1,8 +1,9 @@
 .travel {
-  padding-top: 48px;
+  padding-top: 90px;
   padding-bottom: 20px;
-  background-color: #161C35;
+  background-color: #161c35;
 }
+
 .travel__title {
   text-align: center;
   font-size: 36px;
@@ -10,6 +11,7 @@
 .travel-top {
   position: relative;
 }
+
 .travel-bottom {
   padding-top: 48px;
 }
@@ -66,10 +68,6 @@
   transform: translateY(-36px);
 }
 
-.travel__list-item p {
-  max-width: 160px;
-}
-
 .travel__list-item span {
   color: #fff;
 }
@@ -78,6 +76,14 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.travel-top__content-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -95,4 +101,74 @@
 }
 .travel-top__img-container img {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .travel {
+    background-color: #182044;
+    /* position: relative; */
+  }
+
+  .travel__title {
+    font-size: 60px;
+  }
+
+  .travel__report-author {
+    font-size: 21px;
+  }
+
+  .travel__report-text {
+    font-size: 28px;
+  }
+
+  .travel__buttons {
+    display: none;
+  }
+
+  .travel-bottom {
+    position: relative;
+    top: -350px;
+    left: 0;
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+    z-index: 10;
+  }
+
+  .travel__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    transform: translateX(6px);
+  }
+
+  .travel__list-item {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0) !important;
+  }
+  .travel__list-item p {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .travel__list-item span {
+    font-size: 30px;
+  }
+
+  .travel__list-item:nth-child(1) {
+    border-radius: 15px 0 0 0;
+  }
+  .travel__list-item:nth-child(2) {
+    border-radius: 15px 15px 0 0;
+    transform: translateX(-12px) !important;
+  }
+
+  .travel__list-item:nth-child(3) {
+    border-radius: 0 0 0 15px;
+  }
+  .travel__list-item:nth-child(4) {
+    border-radius: 0 0 15px 15px;
+    transform: translateX(-12px) !important;
+  }
 }

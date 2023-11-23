@@ -25,6 +25,7 @@
   width: 25px;
   height: 3px;
   background-color: #fff;
+  transition: .4s ease-in-out;
 }
 .header.show-menu .menu-btn__line {
   background-color: #cccccc;

@@ -1,18 +1,22 @@
 @import "./normalize.css";
 
 @import "./blocks/container/__container.css";
-@import "/blocks/buttons.css";
+@import "./blocks/buttons.css";
 @import "./blocks/header/__header.css";
+@import "./blocks/contact-links/__contact-links.css";
 @import "./blocks/menu-btn/__menu-btn.css";
 @import "./blocks/menu/__menu.css";
 @import "/blocks/social-links/__social-links.css";
 @import "./blocks/nav/__nav.css";
 @import "./blocks/travel/__travel.css";
-@import "./blocks/contact-buttons/__contact-buttons.css";
 @import "/blocks/about/__about.css";
 @import "/blocks/tours/__tours.css";
 @import "/blocks/companions/__companions.css";
 @import "/blocks/add-profile/__add-profile.css";
+@import "/blocks/interesting/__interesting.css";
+@import "/blocks/get-directions/__get-directions.css";
+@import "/blocks/map/__map.css";
+@import "/blocks/footer/__footer.css";
 
 *,
 *::before,
@@ -42,7 +46,6 @@ a {
 
 body {
   color: #fff;
-
 }
 
 /* title */
@@ -52,6 +55,6 @@ body {
   font-weight: 700;
 }
 
-
-
-
+main {
+  position: relative;
+}

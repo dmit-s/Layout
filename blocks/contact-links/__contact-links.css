@@ -1,0 +1,28 @@
+.contact-links {
+  margin-bottom: 40px;
+}
+
+.contact-links__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 45px;
+  min-height: 45px;
+  border-radius: 50%;
+  background-color: #121936;
+  margin-right: 16px;
+}
+
+.contact-links__icon-container svg {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-links__link {
+  display: flex;
+  align-items: center;
+  color: #192144;
+  font-weight: 700;
+  text-transform: uppercase;
+  word-break: break-all;
+}
