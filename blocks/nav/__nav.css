@@ -11,3 +11,18 @@
     text-align: center;
     line-height: 35px;
 }
+
+@media (min-width: 600px){
+    .nav{
+        padding: 0;
+        margin-bottom: 120px;
+    }
+
+    .nav__link{
+        text-align: left;
+        font-size: 60px;
+        line-height: 
+        71px;
+    }
+  
+}

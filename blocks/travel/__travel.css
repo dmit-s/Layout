@@ -102,7 +102,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .travel {
     background-color: #182044;
     padding-top: 180px;
@@ -146,6 +146,10 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: start;
     transform: translateX(6px);
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: 100%;
   }
 
   .travel__list-item {

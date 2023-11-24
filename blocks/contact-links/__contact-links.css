@@ -1,6 +1,4 @@
-.contact-links {
-  margin-bottom: 40px;
-}
+
 
 .contact-links__icon-container {
   display: flex;
@@ -16,6 +14,7 @@
 .contact-links__icon-container svg {
   width: 25px;
   height: 25px;
+  fill: #FFD74B;
 }
 
 .contact-links__link {
@@ -25,4 +24,27 @@
   font-weight: 700;
   text-transform: uppercase;
   word-break: break-all;
+}
+
+.contact-links__link:hover{
+  color: #FFBD30;
+}
+
+
+
+
+@media (min-width: 600px){
+  .contact-links__link{
+    font-size: 
+    28px;
+  }
+  .contact-links__icon-container{
+    min-width: 68px;
+    min-height: 68px;
+  }
+
+  .contact-links__icon-container svg{
+    width: 35px;
+    height: 35px;
+  }
 }

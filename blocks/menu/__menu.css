@@ -55,3 +55,18 @@
   margin-bottom: 60px;
 }
 
+
+@media (min-width: 600px){
+  .menu{
+    padding: 200px 100px 60px;
+    align-items: flex-start;
+  }    
+
+  .menu__btn{
+    display: none;
+  }
+
+  .menu__contact-links {
+    margin-bottom: 120px;
+  }
+}
