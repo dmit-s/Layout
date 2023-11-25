@@ -38,6 +38,8 @@
 
 }
 
+
+
 .interesting__form{
     background-color: 
     #FFFFFF;
@@ -77,4 +79,46 @@
 .interesting__form-btn:hover{
     background-color: 
     #ff8d30;
+}
+
+
+@media (min-width: 600px){
+    .interesting__desc{
+        max-width: 420px;
+    }
+
+    .interesting__contact-links{
+        width: 100%;
+    }
+
+    .interesting__contact-links .contact-links__link{
+        width: fit-content;
+    }
+
+    .interesting__desc{
+        font-size: 28px;
+        margin-bottom: 60px;
+    }
+
+    .interesting__title{
+        margin-bottom: 60px;
+    }
+
+    .interesting__form{
+        height: 80px;
+    margin-bottom: 60px;
+    }
+
+    .interesting__form-input::placeholder{
+        font-size: 24px;
+    }
+
+    .interesting__form-btn{
+        min-width: 80px;
+        border-radius:  0;
+    }
+
+    .interesting{
+        padding-bottom: 60px;
+    }
 }

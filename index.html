@@ -76,7 +76,7 @@
             <picture>
               <source
                 srcset="/assets/images/globe-back-tablet.png"
-                media="(min-width: 768px)"
+                media="(min-width: 600px)"
               />
               <img src="/assets/images/globe-back-mobile.jpg" alt="asdasd" />
             </picture>
@@ -155,265 +155,385 @@
       </section>
       <section class="about">
         <div class="about__container container">
-          <h2 class="about__title">О сервисе</h2>
-          <p class="about__desc">
-            Любое путешествие веселее с попутчиками, которые на одной волне с
-            тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
-            чужих.
-          </p>
-          <p class="about__subtitle">
-            А если найдете кого-то близкого по духу — скорее зовите в совместный
-            трип!
-          </p>
+          <div class="about__body">
+            <h2 class="about__title title">О сервисе</h2>
+            <p class="about__desc">
+              Любое путешествие веселее с попутчиками, которые на одной волне с
+              тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
+              чужих.
+            </p>
+            <p class="about__subtitle">
+              А если найдете кого-то близкого по духу — скорее зовите в
+              совместный трип!
+            </p>
+            <button class="about__btn btn--show-all">
+              Подробнее
+              <svg
+                width="11"
+                height="12"
+                viewBox="0 0 11 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
+                  fill="#1D2E5B"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="about__img-container">
+            <picture>
+              <source
+                srcset="
+                  /assets/images/about/about-tablet.png,
+                  /assets/images/about/about-desktop.png
+                "
+                sizes="(min-width: 768px), (min-width: 1440px)"
+              />
+              <img src="./assets/images/about/about-mobile.png" alt="About" />
+            </picture>
+          </div>
         </div>
       </section>
       <section class="tours">
         <div class="tours__container container">
-          <h2 class="tours__title title">Направления</h2>
-          <p class="tours__desc">
-            Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
-            странах, куда хотели бы отправиться и чем можно там заняться.
-          </p>
-
-          <div class="tours__cards">
-            <div class="tours__card">
-              <div class="tours__card-img-container">
-                <img
-                  src="./assets/images//tours/thailand-mobile.jpg"
-                  alt="Place"
-                />
-              </div>
-              <div class="tours__card-body">
-                <div class="tours__card-desc">
-                  <p class="tours__card-title">Таиланд</p>
-                  <p class="tours__card-subtitle">Джунгли зовут!</p>
-                </div>
-                <div class="tours__card-people">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      opacity="0.1"
-                      d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
-                      fill="#192144"
-                    />
-                  </svg>
-                  18321
-                </div>
-              </div>
-            </div>
-            <div class="tours__card">
-              <div class="tours__card-img-container">
-                <img
-                  src="./assets/images/tours/france-mobile.jpg"
-                  alt="Place"
-                />
-              </div>
-              <div class="tours__card-body">
-                <div class="tours__card-desc">
-                  <p class="tours__card-title">Франция</p>
-                  <p class="tours__card-subtitle">Трэ бьен, манифик!</p>
-                </div>
-                <div class="tours__card-people">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      opacity="0.1"
-                      d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
-                      fill="#192144"
-                    />
-                  </svg>
-                  12518
-                </div>
-              </div>
-            </div>
-            <div class="tours__card">
-              <div class="tours__card-img-container">
-                <img src="./assets/images/tours/czech-mobile.jpg" alt="Place" />
-              </div>
-              <div class="tours__card-body">
-                <div class="tours__card-desc">
-                  <p class="tours__card-title">Чехия</p>
-                  <p class="tours__card-subtitle">Закоулки старой Европы</p>
-                </div>
-                <div class="tours__card-people">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      opacity="0.1"
-                      d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
-                      fill="#192144"
-                    />
-                  </svg>
-                  5326
-                </div>
-              </div>
+          <div class="tours__bg">
+            <img src="/assets/images/tours/flags-back.png" alt="Flags" />
+          </div>
+          <div class="tours__header">
+            <div class="content-container">
+              <h2 class="tours__title title">Направления</h2>
+              <p class="tours__desc">
+                Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
+                странах, куда хотели бы отправиться и чем можно там заняться.
+              </p>
             </div>
           </div>
-          <button class="tours__show-all-btn btn--show-all">
-            Показать все
-            <svg
-              width="11"
-              height="12"
-              viewBox="0 0 11 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
-                fill="#1D2E5B"
-              />
-            </svg>
-          </button>
+          <div class="tours__body">
+            <div class="tours__body-container content-container">
+              <div class="tours__cards">
+                <div class="tours__card">
+                  <div class="tours__card-img-container">
+                    <picture>
+                      <source
+                        srcset="/assets/images/tours/thailand-desktop.png"
+                        media="(min-width: 600px)"
+                      />
+                      <img
+                        src="./assets/images/tours/thailand-mobile.jpg"
+                        alt="France"
+                      />
+                    </picture>
+                  </div>
+                  <div class="tours__card-body">
+                    <div class="tours__card-desc">
+                      <p class="tours__card-title">Таиланд</p>
+                      <p class="tours__card-subtitle">Джунгли зовут!</p>
+                    </div>
+                    <div class="tours__card-people">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.1"
+                          d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
+                          fill="#192144"
+                        />
+                      </svg>
+                      18321
+                    </div>
+                    <div class="tours__card-flag">
+                      <picture>
+                        <source
+                          srcset="/assets/images/flags/thailand-big.png"
+                          media="(min-width: 600px)"
+                        />
+                        <img
+                          src="/assets/images/flags/thailand.png"
+                          alt="Thailand"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="tours__card">
+                  <div class="tours__card-img-container">
+                    <picture>
+                      <source
+                        srcset="/assets/images/tours/france-desktop.png"
+                        media="(min-width: 600px)"
+                      />
+                      <img
+                        src="./assets/images/tours/france-mobile.jpg"
+                        alt="France"
+                      />
+                    </picture>
+                  </div>
+                  <div class="tours__card-body">
+                    <div class="tours__card-desc">
+                      <p class="tours__card-title">Франция</p>
+                      <p class="tours__card-subtitle">Трэ бьен, манифик!</p>
+                    </div>
+                    <div class="tours__card-people">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.1"
+                          d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
+                          fill="#192144"
+                        />
+                      </svg>
+                      12518
+                    </div>
+                    <div class="tours__card-flag">
+                      <picture>
+                        <source
+                          srcset="/assets/images/flags/france-big.png"
+                          media="(min-width: 600px)"
+                        />
+                        <img
+                          src="/assets/images/flags/france.png"
+                          alt="France"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="tours__card">
+                  <div class="tours__card-img-container">
+                    <picture>
+                      <source
+                        srcset="/assets/images/tours/czech-desktop.png"
+                        media="(min-width: 600px)"
+                      />
+                      <img
+                        src="./assets/images/tours/czech-mobile.jpg"
+                        alt="Czech"
+                      />
+                    </picture>
+                  </div>
+                  <div class="tours__card-body">
+                    <div class="tours__card-desc">
+                      <p class="tours__card-title">Чехия</p>
+                      <p class="tours__card-subtitle">Закоулки старой Европы</p>
+                    </div>
+                    <div class="tours__card-people">
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.1"
+                          d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
+                          fill="#192144"
+                        />
+                      </svg>
+                      5326
+                    </div>
+                    <div class="tours__card-flag">
+                      <picture>
+                        <source
+                          srcset="/assets/images/flags/czech-big.png"
+                          media="(min-width: 600px)"
+                        />
+                        <img src="/assets/images/flags/czech.png" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="tours__show-all-btn btn--show-all">
+                Показать все
+                <svg
+                  width="11"
+                  height="12"
+                  viewBox="0 0 11 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
+                    fill="#1D2E5B"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="companions">
         <div class="companions__container container">
           <div class="companions-top">
-            <h2 class="companions__title title">Попутчики</h2>
-            <p class="companions__desc">
-              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-              Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-            </p>
-            <p class="companions__subtitle">
-              Теперь можно легко найти единомышленников!
-            </p>
-          </div>
-
-          <div class="companions__cards">
-            <div class="companions__card">
-              <div class="companions__card-img-container">
-                <img
-                  src="/assets/images/companions/person-1-mobile.png"
-                  alt="Person Image"
-                />
-                <svg viewBox="0 0 60 60">
-                  <use xlink:href="assets/icons/levels.svg#level-99"></use>
-                </svg>
-              </div>
-              <div class="companions__card-body">
-                <div class="companions__card-flags">
-                  <img
-                    src="/assets/images/flags/sri-lanka.png"
-                    alt="Sri Lanka"
-                  />
-                  <img src="/assets/images/flags/thailand.png" alt="Thailand" />
-                  <img
-                    src="/assets/images/flags/seychelles.png"
-                    alt="Seychelles"
-                  />
-                </div>
-                <p class="companions__card-name" data-clr="coral">
-                  Таня Фирсова
-                </p>
-                <div class="companions__card-tags">
-                  <span class="companions__card-tag"> #ЗОЖ </span>
-                  <span class="companions__card-tag"> #ПП </span>
-                  <span class="companions__card-tag"> #Фитнес </span>
-                  <span class="companions__card-tag"> #пляж </span>
-                  <span class="companions__card-tag"> #авокадо </span>
-                  <span class="companions__card-tag"> #смузи </span>
-                </div>
-                <div class="companions__card-icons">
-                  <svg class="active" viewBox="0 0 21 23">
-                    <use xlink:href="assets/icons/companions-icons.svg#plane" />
-                  </svg>
-                  <svg viewBox="0 0 18 21">
-                    <use xlink:href="assets/icons/companions-icons.svg#bus" />
-                  </svg>
-                  <svg viewBox="0 0 25 24">
-                    <use
-                      xlink:href="assets/icons/companions-icons.svg#bicycle"
-                    />
-                  </svg>
-                  <svg viewBox="0 0 21 24">
-                    <use xlink:href="assets/icons/companions-icons.svg#run" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="companions__card">
-              <div class="companions__card-img-container">
-                <img
-                  src="/assets/images/companions/person-2-mobile.png"
-                  alt="Person Image"
-                />
-                <svg viewBox="0 0 60 60">
-                  <use xlink:href="assets/icons/levels.svg#level-80"></use>
-                </svg>
-              </div>
-              <div class="companions__card-body">
-                <div class="companions__card-flags">
-                  <img src="/assets/images/flags/belgium.png" alt="Belgium" />
-                  <img src="/assets/images/flags/czech.png" alt="Czech" />
-                </div>
-                <p class="companions__card-name" data-clr="green">Петя Демин</p>
-                <div class="companions__card-tags">
-                  <span class="companions__card-tag"> #бургер </span>
-                  <span class="companions__card-tag"> #бар </span>
-                  <span class="companions__card-tag"> #футбол </span>
-                  <span class="companions__card-tag"> #концерт </span>
-                  <span class="companions__card-tag"> #крафт </span>
-                </div>
-                <div class="companions__card-icons">
-                  <svg class="active" viewBox="0 0 21 23">
-                    <use xlink:href="assets/icons/companions-icons.svg#plane" />
-                  </svg>
-                  <svg class="active" viewBox="0 0 18 21">
-                    <use xlink:href="assets/icons/companions-icons.svg#bus" />
-                  </svg>
-                  <svg viewBox="0 0 25 24">
-                    <use
-                      xlink:href="assets/icons/companions-icons.svg#bicycle"
-                    />
-                  </svg>
-                  <svg class="active" viewBox="0 0 21 24">
-                    <use xlink:href="assets/icons/companions-icons.svg#run" />
-                  </svg>
-                </div>
-              </div>
+            <div class="companions-top__container content-container">
+              <h2 class="companions__title title">Попутчики</h2>
+              <p class="companions__desc">
+                Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+                Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+              </p>
+              <p class="companions__subtitle">
+                Теперь можно легко найти единомышленников!
+              </p>
             </div>
           </div>
-          <button class="companions__show-all btn--show-all">
-            Показать всех
-            <svg
-              width="11"
-              height="12"
-              viewBox="0 0 11 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
-                fill="#1D2E5B"
-              />
-            </svg>
-          </button>
+          <div class="companions-bottom">
+            <div class="companions-bottom__container content-container">
+              <div class="companions__cards">
+                <div class="companions__card">
+                  <div class="companions__card-img-container">
+                    <img
+                      src="/assets/images/companions/person-1-mobile.png"
+                      alt="Person Image"
+                    />
+                    <svg viewBox="0 0 60 60">
+                      <use xlink:href="assets/icons/levels.svg#level-99"></use>
+                    </svg>
+                  </div>
+                  <div class="companions__card-body">
+                    <div class="companions__card-flags">
+                      <img
+                        src="/assets/images/flags/sri-lanka.png"
+                        alt="Sri Lanka"
+                      />
+                      <img
+                        src="/assets/images/flags/thailand.png"
+                        alt="Thailand"
+                      />
+                      <img
+                        src="/assets/images/flags/seychelles.png"
+                        alt="Seychelles"
+                      />
+                    </div>
+                    <p class="companions__card-name" data-clr="coral">
+                      Таня Фирсова
+                    </p>
+                    <div class="companions__card-tags">
+                      <span class="companions__card-tag"> #ЗОЖ </span>
+                      <span class="companions__card-tag"> #ПП </span>
+                      <span class="companions__card-tag"> #Фитнес </span>
+                      <span class="companions__card-tag"> #пляж </span>
+                      <span class="companions__card-tag"> #авокадо </span>
+                      <span class="companions__card-tag"> #смузи </span>
+                    </div>
+                    <div class="companions__card-icons">
+                      <svg class="active" viewBox="0 0 21 23">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#plane"
+                        />
+                      </svg>
+                      <svg viewBox="0 0 18 21">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#bus"
+                        />
+                      </svg>
+                      <svg viewBox="0 0 25 24">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#bicycle"
+                        />
+                      </svg>
+                      <svg viewBox="0 0 21 24">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#run"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="companions__card">
+                  <div class="companions__card-img-container">
+                    <img
+                      src="/assets/images/companions/person-2-mobile.png"
+                      alt="Person Image"
+                    />
+                    <svg viewBox="0 0 60 60">
+                      <use xlink:href="assets/icons/levels.svg#level-80"></use>
+                    </svg>
+                  </div>
+                  <div class="companions__card-body">
+                    <div class="companions__card-flags">
+                      <img
+                        src="/assets/images/flags/belgium.png"
+                        alt="Belgium"
+                      />
+                      <img src="/assets/images/flags/czech.png" alt="Czech" />
+                    </div>
+                    <p class="companions__card-name" data-clr="green">
+                      Петя Демин
+                    </p>
+                    <div class="companions__card-tags">
+                      <span class="companions__card-tag"> #бургер </span>
+                      <span class="companions__card-tag"> #бар </span>
+                      <span class="companions__card-tag"> #футбол </span>
+                      <span class="companions__card-tag"> #концерт </span>
+                      <span class="companions__card-tag"> #крафт </span>
+                    </div>
+                    <div class="companions__card-icons">
+                      <svg class="active" viewBox="0 0 21 23">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#plane"
+                        />
+                      </svg>
+                      <svg class="active" viewBox="0 0 18 21">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#bus"
+                        />
+                      </svg>
+                      <svg viewBox="0 0 25 24">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#bicycle"
+                        />
+                      </svg>
+                      <svg class="active" viewBox="0 0 21 24">
+                        <use
+                          xlink:href="assets/icons/companions-icons.svg#run"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="companions__show-all btn--show-all">
+                Показать всех
+                <svg
+                  width="11"
+                  height="12"
+                  viewBox="0 0 11 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
+                    fill="#1D2E5B"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="add-profile">
         <div class="add-profile__container container">
           <div class="add-profile__header">
             <h2 class="add-profile__title title">Добавьте свой профиль</h2>
-            <img
-              class="add-profile__img"
-              src="/assets/images/rates.png"
-              alt="Rates"
-            />
+            <div class="add-profile__img-container">
+              <img
+                class="add-profile__img"
+                src="/assets/images/rates.png"
+                alt="Rates"
+              />
+            </div>
           </div>
           <div class="rates-list">
             <div class="rates-list__item">
@@ -444,7 +564,27 @@
               </div>
             </div>
           </div>
-          <button class="add-profile__btn">Показать тарифы для бизнеса</button>
+          <button id="show-rates" class="add-profile__btn">
+            <div class="add-profile__btn-icon-wrapper">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23.3758 23.2418V19.8933C23.3758 18.9558 23.2418 18.0182 22.7061 17.0806C22.1703 16.143 21.5006 15.3394 20.5631 14.8036C19.6255 14.1339 17.6164 14 16.6788 14L14.5358 16.277L15.3394 18.0182V22.0364L14 23.5097L12.6606 22.0364V18.0182L13.5982 16.277L11.3212 14C10.2497 14 8.24063 14.1339 7.30306 14.8036C6.36548 15.3394 5.82972 16.143 5.29396 17.0806C4.75821 18.0182 4.62427 18.8218 4.62427 19.8933V23.2418C4.62427 23.2418 8.10669 24.7151 14 24.7151C19.8934 24.7151 23.3758 23.2418 23.3758 23.2418Z"
+                  fill="#132576"
+                />
+                <path
+                  d="M14 3.41895C11.4551 3.41895 9.98178 5.82985 10.3836 8.50864C10.7854 11.1874 12.1248 13.0626 14 13.0626C15.8751 13.0626 17.2145 11.1874 17.6163 8.50864C18.0181 5.69592 16.5448 3.41895 14 3.41895Z"
+                  fill="#132576"
+                />
+              </svg>
+            </div>
+
+            Показать тарифы для бизнеса
+          </button>
         </div>
       </section>
       <div class="all-rates-wrapper">
@@ -472,7 +612,7 @@
                 </div>
               </div>
 
-              <button class="all-rates__close-btn">Закрыть окно</button>
+              <button id="hide-rates" class="all-rates__close-btn">Закрыть окно</button>
             </div>
           </div>
         </div>
@@ -507,7 +647,7 @@
             </button>
           </form>
           <p class="interesting__desc">
-            Остались вопросы?<br />
+            Остались вопросы?
             Мы с радостью на них ответим!
           </p>
           <div class="interesting__contact-links contact-links">

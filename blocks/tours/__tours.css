@@ -37,6 +37,7 @@
   background-color: #fff;
   border-radius: 15px;
   transform: translateY(-15px);
+  position: relative;
 }
 
 .tours__card-img-container {
@@ -45,21 +46,7 @@
 .tours__card-img-container img {
   width: 100%;
 }
-.tours__card-img-container::before {
-  position: absolute;
-  bottom: 0;
-  left: 25px;
-  z-index: 1;
-}
-.tours__card:nth-child(1) .tours__card-img-container::before {
-  content: url("/assets/images/flags/thailand.png");
-}
-.tours__card:nth-child(2) .tours__card-img-container::before {
-  content: url("/assets/images/flags/france.png");
-}
-.tours__card:nth-child(3) .tours__card-img-container::before {
-  content: url("/assets/images/flags/czech.png");
-}
+
 
 .tours__card-desc {
   grid-column: 1 / 1;
@@ -84,3 +71,110 @@
 .tours__card-people svg {
   vertical-align: middle;
 }
+
+.tours__card-flag{
+  position: absolute;
+  top: -16px;
+  left: 24px;
+  z-index: 1;
+}
+
+.tours__bg{
+  display: none;
+}
+
+.tours__body-container{
+ padding: 0; 
+}
+
+
+@media (min-width: 600px){
+  .tours__card{
+    display: flex;
+    width: 100%;
+  }
+
+  .tours__card-body{
+    order: -1;
+    flex: 1 1 auto;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    border-radius: 20px 0 0 20px;
+  }
+
+  .tours__card-title{
+    font-size: 24px;
+  }
+
+  .tours__card-subtitle{
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .tours__card-subtitle, .tours__card-people{
+    font-size: 20px;
+  }
+
+  .tours__card-img-container picture{
+    display: flex;
+  }
+
+  .tours__card-flag {
+    right: -35px;
+    top: 16px;
+    left: auto;
+
+  }
+
+  .tours__desc{
+    max-width: 380px;
+  }
+
+  .tours__bg{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
+
+.tours__container{
+  position: relative;
+}
+
+
+.tours__body-container{
+  padding: 0 35px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

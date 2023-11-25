@@ -1,27 +1,76 @@
 .about {
-  background-image: url("/assets/images/about-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 35px;
-  padding-bottom: 200px;
-  background-color: #161C35;
+  padding-bottom: 82px;
+  background-color: #161c35;
   position: relative;
   z-index: 6;
   border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.about__body{
+  max-width: 210px;
+}
+
+.about__btn{
+  display: none;
+  max-width: 280px ;
+}
+
+.about__img-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  max-width: 768px;
+  width: 100%;
+}
+.about__img-container img{
+  width: 100%;
+  object-fit: cover;
 }
 
 .about__title {
-  color: #ff8d30;
-  font-size: 24px;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .about__desc {
   font-weight: 300 !important;
   margin-bottom: 20px;
+  line-height: 22px;
 }
 
 .about__subtitle {
   font-weight: 700;
+  line-height: 22px;
+}
+
+@media (min-width: 600px) {
+  .about__desc {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .about__subtitle {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .about__container{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .about__img-container{
+    position: static;
+    width: auto;
+    flex: 0 0 50%;
+  }
+  .about__body{
+    max-width:none;
+    flex: 0 0 50%;
+  }
+
+  .about__btn{
+    display: flex;
+    margin-top: 50px;
+  }
 }

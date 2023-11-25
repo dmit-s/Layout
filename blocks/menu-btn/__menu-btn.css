@@ -30,6 +30,9 @@
 .header.show-menu .menu-btn__line {
   background-color: #cccccc;
 }
+header.scroll .menu-btn__line{
+  background-color: #cccccc;
+}
 .menu-btn__line:not(:last-child) {
   margin-bottom: 5px;
 }

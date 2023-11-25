@@ -54,13 +54,21 @@
   background-color: #81e31e;
 }
 
+.companions__title{
+  margin-bottom: 20px;
+}
+
 .companions__desc {
   margin-bottom: 25px;
   font-weight: 300;
+  max-width: 280px;
+  line-height: 22px;
 }
 
 .companions__subtitle {
   font-weight: 700;
+  max-width: 300px;
+  line-height: 22px;
 }
 .companions__card-icons {
   display: flex;
@@ -91,7 +99,6 @@
 }
 
 .companions-top {
-  padding-left: 25px;
   margin-bottom: 55px;
 }
 
@@ -129,4 +136,33 @@
 
 .companions__card-flags img:not(:last-child) {
   margin-right: 20px;
+}
+
+.companions-bottom__container{
+  padding: 0;
+}
+
+@media (min-width: 600px){
+  .companions__cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .companions__card:not(:last-child){
+    margin: 0;
+    margin-right: 50px;
+  }
+
+  .companions{
+    padding-bottom: 90px;
+  }
+
+.companions__desc{
+  max-width: 300px;
+}
+
+.companions__subtitle{
+  max-width: 300px;
+}
 }
