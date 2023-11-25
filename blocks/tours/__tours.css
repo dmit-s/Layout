@@ -1,5 +1,4 @@
 .tours {
-
   padding-top: 70px;
   padding-bottom: 35px;
   background-color: #edeff6;
@@ -47,7 +46,6 @@
   width: 100%;
 }
 
-
 .tours__card-desc {
   grid-column: 1 / 1;
 }
@@ -57,6 +55,11 @@
   color: #000;
   font-size: 21px;
 }
+
+.tours__card-subtitle {
+  opacity: 0.3;
+}
+
 .tours__card-subtitle,
 .tours__card-people {
   color: #444444;
@@ -64,37 +67,45 @@
 }
 
 .tours__card-people {
+  display: flex;
+  align-items: center;
   grid-column: 2 / 2;
   line-height: 30px;
 }
 
-.tours__card-people svg {
-  vertical-align: middle;
+.tours__card-people-count {
+  opacity: 0.3;
+  padding-left: 5px;
+}
+.tours__card-people-icon {
+  opacity: 0.1;
+  width: 15px;
+  height: 15px;
+  fill: #444444;
 }
 
-.tours__card-flag{
+.tours__card-flag {
   position: absolute;
   top: -16px;
   left: 24px;
   z-index: 1;
 }
 
-.tours__bg{
+.tours__bg {
   display: none;
 }
 
-.tours__body-container{
- padding: 0; 
+.tours__body-container {
+  padding: 0;
 }
 
-
-@media (min-width: 600px){
-  .tours__card{
+@media (min-width: 600px) {
+  .tours__card {
     display: flex;
     width: 100%;
   }
 
-  .tours__card-body{
+  .tours__card-body {
     order: -1;
     flex: 1 1 auto;
     transform: none;
@@ -102,24 +113,24 @@
     flex-direction: column;
     justify-content: center;
 
-
     border-radius: 20px 0 0 20px;
   }
 
-  .tours__card-title{
+  .tours__card-title {
     font-size: 24px;
   }
 
-  .tours__card-subtitle{
+  .tours__card-subtitle {
     margin-bottom: 20px;
     font-weight: 400;
   }
 
-  .tours__card-subtitle, .tours__card-people{
+  .tours__card-subtitle,
+  .tours__card-people {
     font-size: 20px;
   }
 
-  .tours__card-img-container picture{
+  .tours__card-img-container picture {
     display: flex;
   }
 
@@ -127,54 +138,32 @@
     right: -35px;
     top: 16px;
     left: auto;
-
   }
 
-  .tours__desc{
+  .tours__desc {
     max-width: 380px;
   }
 
-  .tours__bg{
+  .tours__bg {
     display: block;
     position: absolute;
     top: 0;
     right: 40px;
+    z-index: -1;
   }
 
-.tours__container{
-  position: relative;
+  .tours__container {
+    position: relative;
+  }
+
+  .tours__body-container {
+    padding: 0 35px;
+  }
+
+  .tours__card-people-icon {
+    opacity: 0.1;
+    width: 20px;
+    height: 20px;
+    fill: #444444;
+  }
 }
-
-
-.tours__body-container{
-  padding: 0 35px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

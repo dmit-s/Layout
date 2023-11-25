@@ -102,6 +102,28 @@
   width: 100%;
 }
 
+.travel__buttons {
+  transform: translateY(40%);
+}
+
+.travel__buttons .btn--circle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.travel__buttons .btn--circle:first-child {
+  background-color: #ff8d30;
+}
+.travel__buttons .btn--circle:first-child:hover {
+  background-color: #f26926;
+}
+.travel__buttons .btn--circle:nth-child(2) {
+  background-color: #ffbd30;
+}
+.travel__buttons .btn--circle:nth-child(2):hover {
+  background-color: #ff8d30;
+}
+
 @media (min-width: 600px) {
   .travel {
     background-color: #182044;

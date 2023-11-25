@@ -1,0 +1,15 @@
+.btn--primary {
+  min-width: 190px;
+  height: 40px;
+  background-color: #ffd74b;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn--primary:hover {
+  background-color: #ffbd30;
+}

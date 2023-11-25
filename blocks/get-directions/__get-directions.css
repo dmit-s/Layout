@@ -1,20 +1,28 @@
-.get-directions{
-    position: relative;
-    top: -100px;
-    z-index: 1;
-    border-radius: 0 0 20px 20px;
-    padding-bottom: 35px;
-    padding-top: 50px;
-    background-color: #FFD74B;
+.get-directions {
+  position: relative;
+  top: -100px;
+  z-index: 1;
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 35px;
+  padding-top: 50px;
+  background-color: #ffd74b;
 }
 
-
-.get-directions__contact-links .contact-links__link{
-    max-width: 230px;
-    word-break: normal;
+.get-directions__contact-links {
+  margin-bottom: 32px;
 }
 
-.get-directions__btn{
-    border: 3px solid #192144;
+.get-directions__contact-links .contact-links__link {
+  max-width: 230px;
+  word-break: normal;
+  color: #1d2e5b;
+}
+
+.get-directions__contact-links .contact-links__link:hover {
+  color: #1d2e5b;
+}
+
+.get-directions__btn {
+  border: 3px solid #192144;
 }
 /* asdasd */

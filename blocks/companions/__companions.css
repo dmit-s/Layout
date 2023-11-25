@@ -5,22 +5,31 @@
   background-size: contain;
   background-position: top 0px right 25px;
   background-repeat: no-repeat;
-  background-color: #161C35;
+  background-color: #161c35;
   position: relative;
   top: -40px;
   z-index: 4;
-  border-radius:  0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
 }
-.companions__cards{
-    margin-bottom: 20px;
+.companions__cards {
+  margin-bottom: 20px;
 }
-.companions__card:not(:last-child){
-    margin-bottom: 10px;
+
+.companions__card {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.companions__card:hover .companions__card-img-container img {
+  transform: scale(1.1);
+}
+.companions__card:not(:last-child) {
+  margin-bottom: 10px;
 }
 .companions__card-tags {
   max-width: 190px;
   text-align: center;
-  margin-bottom: 15px;
+  margin: 20px 0;
 }
 .companions__card-tag {
   color: #444444;
@@ -31,7 +40,6 @@
   color: #1d2e5b;
   font-size: 21px;
   font-weight: 700;
-  margin-bottom: 20px;
   position: relative;
 }
 
@@ -54,7 +62,7 @@
   background-color: #81e31e;
 }
 
-.companions__title{
+.companions__title {
   margin-bottom: 20px;
 }
 
@@ -76,13 +84,13 @@
 }
 .companions__card-icons svg {
   min-width: 25px;
-  fill: #1D2E5B;
-  opacity: .15;
+  fill: #1d2e5b;
+  opacity: 0.15;
 }
 .companions__card-icons svg.active {
-    fill: #101D41;
-    opacity: 1;
-  }
+  fill: #101d41;
+  opacity: 1;
+}
 .companions__card-icons svg:not(:last-child) {
   margin-right: 10px;
 }
@@ -94,7 +102,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 0 0 15px 15px;
   position: relative;
 }
 
@@ -119,6 +126,7 @@
 .companions__card-img-container img {
   flex: 1 1 auto;
   width: 100%;
+  transition: 0.6s ease-in-out;
 }
 
 .companions__card-flags {
@@ -138,31 +146,57 @@
   margin-right: 20px;
 }
 
-.companions-bottom__container{
+.companions-bottom__container {
   padding: 0;
 }
 
-@media (min-width: 600px){
-  .companions__cards{
+@media (min-width: 600px) {
+  .companions__cards {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
   }
 
-  .companions__card:not(:last-child){
+  .companions__card:not(:last-child) {
     margin: 0;
     margin-right: 50px;
   }
 
-  .companions{
+  .companions {
     padding-bottom: 90px;
   }
 
-.companions__desc{
-  max-width: 300px;
-}
+  .companions__desc {
+    max-width: 440px;
+    font-size: 28px;
+    line-height: 34px;
+  }
 
-.companions__subtitle{
-  max-width: 300px;
-}
+  .companions__subtitle {
+    max-width: 300px;
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .companions__card {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  .companions__card-body {
+    height: 100%;
+  }
+
+  .companions__card-tags {
+    flex: 1 1 auto;
+  }
+
+  .companions__card-name {
+    font-size: 24px;
+  }
+
+  .companions__card-tag {
+    font-size: 20px;
+  }
 }

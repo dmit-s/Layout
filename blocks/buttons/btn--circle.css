@@ -1,0 +1,13 @@
+.btn--circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #ffbd30;
+  border-radius: 50%;
+}
+
+.btn--circle:hover {
+  background-color: #ff8d30;
+}
