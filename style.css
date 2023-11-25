@@ -6,7 +6,7 @@
 
 /* components */
 @import "./blocks/container/__container.css";
-@import "./blocks/buttons.css";
+
 @import "./blocks/header/__header.css";
 @import "./blocks/contact-links/__contact-links.css";
 @import "./blocks/menu-btn/__menu-btn.css";
@@ -22,6 +22,7 @@
 @import "/blocks/get-directions/__get-directions.css";
 @import "/blocks/map/__map.css";
 @import "/blocks/footer/__footer.css";
+@import "./blocks/buttons/index.css";
 
 *,
 *::before,
@@ -69,4 +70,19 @@ body {
 
 main {
   position: relative;
+}
+
+.icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  background: 0;
+  padding: 0;
+  margin: 0;
 }

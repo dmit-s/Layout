@@ -89,7 +89,20 @@
                 с крутыми<br />
                 попутчиками!
               </h1>
-              <div class="travel__buttons group-buttons-primary">
+              <div class="travel__buttons btn-group">
+                <a class="btn--circle" href="#">
+                  <svg class="icon">
+                    <use xlink:href="assets/icons/contact.svg#call" />
+                  </svg>
+                </a>
+                <a class="btn--circle" href="#">
+                  <svg class="icon">
+                    <use xlink:href="assets/icons/contact.svg#email" />
+                  </svg>
+                </a>
+                <button class="btn--primary">Авторизация</button>
+              </div>
+              <!-- <div class="travel__buttons group-buttons-primary">
                 <a href="#" class="group-buttons-primary__link">
                   <svg>
                     <use xlink:href="assets/icons/contact.svg#call" />
@@ -103,7 +116,7 @@
                 <button class="group-buttons-primary__btn btn--primary">
                   Авторизация
                 </button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -166,7 +179,7 @@
               А если найдете кого-то близкого по духу — скорее зовите в
               совместный трип!
             </p>
-            <button class="about__btn btn--show-all">
+            <button class="about__btn btn--play">
               Подробнее
               <svg
                 width="11"
@@ -185,11 +198,12 @@
           <div class="about__img-container">
             <picture>
               <source
-                srcset="
-                  /assets/images/about/about-tablet.png,
-                  /assets/images/about/about-desktop.png
-                "
-                sizes="(min-width: 768px), (min-width: 1440px)"
+                srcset="/assets/images/about/about-desktop.png"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/assets/images/about/about-tablet.png"
+                media="(min-width: 600px)"
               />
               <img src="./assets/images/about/about-mobile.png" alt="About" />
             </picture>
@@ -233,19 +247,15 @@
                     </div>
                     <div class="tours__card-people">
                       <svg
-                        width="14"
-                        height="14"
+                        class="tours__card-people-icon"
                         viewBox="0 0 14 14"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          opacity="0.1"
                           d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
-                          fill="#192144"
                         />
                       </svg>
-                      18321
+                      <span class="tours__card-people-count"> 18321 </span>
                     </div>
                     <div class="tours__card-flag">
                       <picture>
@@ -281,19 +291,15 @@
                     </div>
                     <div class="tours__card-people">
                       <svg
-                        width="14"
-                        height="14"
+                        class="tours__card-people-icon"
                         viewBox="0 0 14 14"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          opacity="0.1"
                           d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
-                          fill="#192144"
                         />
                       </svg>
-                      12518
+                      <span class="tours__card-people-count">12518</span>
                     </div>
                     <div class="tours__card-flag">
                       <picture>
@@ -329,19 +335,15 @@
                     </div>
                     <div class="tours__card-people">
                       <svg
-                        width="14"
-                        height="14"
+                        class="tours__card-people-icon"
                         viewBox="0 0 14 14"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          opacity="0.1"
                           d="M4.375 3.92991C4.375 5.45333 5.55275 6.69306 7 6.69306C8.44725 6.69306 9.625 5.45333 9.625 3.92991C9.625 2.40648 8.44725 1.16675 7 1.16675C5.55275 1.16675 4.375 2.40648 4.375 3.92991ZM11.6667 12.8334H12.25V12.2194C12.25 9.84982 10.4177 7.92113 8.16667 7.92113H5.83333C3.58167 7.92113 1.75 9.84982 1.75 12.2194V12.8334H11.6667Z"
-                          fill="#192144"
                         />
                       </svg>
-                      5326
+                      <span class="tours__card-people-count"> 5326 </span>
                     </div>
                     <div class="tours__card-flag">
                       <picture>
@@ -355,7 +357,7 @@
                   </div>
                 </div>
               </div>
-              <button class="tours__show-all-btn btn--show-all">
+              <button class="tours__show-all-btn btn--play">
                 Показать все
                 <svg
                   width="11"
@@ -504,7 +506,7 @@
                   </div>
                 </div>
               </div>
-              <button class="companions__show-all btn--show-all">
+              <button class="companions__show-all btn--play">
                 Показать всех
                 <svg
                   width="11"
@@ -538,7 +540,7 @@
           <div class="rates-list">
             <div class="rates-list__item">
               <div class="rates-list__item-body">
-                <p class="rates-list__item-desc">Базовое размещение</p>
+                <p class="rates-list__item-title">Базовое размещение</p>
                 <p class="rates-list__item-desc">Бесплатно</p>
               </div>
               <div class="rates-list__item-number">
@@ -547,7 +549,7 @@
             </div>
             <div class="rates-list__item">
               <div class="rates-list__item-body">
-                <p class="rates-list__item-desc">Вывод на первых позициях</p>
+                <p class="rates-list__item-title">Вывод на первых позициях</p>
                 <p class="rates-list__item-desc">99 руб./мес</p>
               </div>
               <div class="rates-list__item-number">
@@ -556,7 +558,7 @@
             </div>
             <div class="rates-list__item">
               <div class="rates-list__item-body">
-                <p class="rates-list__item-desc">Кастомный цвет карточки</p>
+                <p class="rates-list__item-title">Кастомный цвет карточки</p>
                 <p class="rates-list__item-desc">59 руб./мес</p>
               </div>
               <div class="rates-list__item-number">
@@ -564,6 +566,7 @@
               </div>
             </div>
           </div>
+
           <button id="show-rates" class="add-profile__btn">
             <div class="add-profile__btn-icon-wrapper">
               <svg
@@ -612,7 +615,9 @@
                 </div>
               </div>
 
-              <button id="hide-rates" class="all-rates__close-btn">Закрыть окно</button>
+              <button id="hide-rates" class="all-rates__close-btn">
+                Закрыть окно
+              </button>
             </div>
           </div>
         </div>
@@ -647,8 +652,7 @@
             </button>
           </form>
           <p class="interesting__desc">
-            Остались вопросы?
-            Мы с радостью на них ответим!
+            Остались вопросы? Мы с радостью на них ответим!
           </p>
           <div class="interesting__contact-links contact-links">
             <a class="contact-links__link" href="tel:+88005558628">
@@ -682,18 +686,16 @@
               ул. Большая Конюшенная, 19/8</a
             >
           </div>
-          <button class="get-directions__btn btn--show-all">
+          <button class="get-directions__btn btn--play btn--play-stroke">
             Проложить маршрут
             <svg
               width="11"
               height="12"
               viewBox="0 0 11 12"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z"
-                fill="#1D2E5B"
               />
             </svg>
           </button>

@@ -1,0 +1,30 @@
+.btn--play {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ffd74b;
+  border-radius: 15px;
+  color: #1d2e5b;
+  fill: #1d2e5b;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn--play:hover {
+  background-color: #ffbd30;
+}
+
+.btn--play-stroke:hover {
+  color: #fff;
+  background-color: #192144;
+  fill: #fff;
+}
+
+@media (min-width: 600px) {
+  .btn--play {
+    padding: 28px;
+    font-size: 24px;
+  }
+}
