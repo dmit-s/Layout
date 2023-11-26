@@ -108,6 +108,7 @@
   }
 
   .footer__copyright-text {
+    font-size: 20px;
     margin-right: 23px;
   }
 
@@ -130,5 +131,11 @@
 
   .footer__copyright-icon:hover {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__logo {
+    width: 200px;
   }
 }

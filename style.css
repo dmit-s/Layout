@@ -53,6 +53,7 @@ a {
 body {
   color: #fff;
   font-family: "Blogger Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 /* title */

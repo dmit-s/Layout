@@ -80,3 +80,21 @@
   position: relative;
   z-index: 1000;
 }
+
+@media (min-width: 1024px) {
+  .header__auth-btn {
+    display: none;
+  }
+
+  .header.scroll .header__container {
+    background-color: transparent;
+  }
+
+  .header.scroll {
+    background-color: #fff;
+  }
+
+  .header__container {
+    background-color: transparent;
+  }
+}

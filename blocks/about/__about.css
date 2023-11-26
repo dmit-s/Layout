@@ -9,11 +9,11 @@
 }
 
 .about__body {
-  max-width: 210px;
+  max-width: 300px;
 }
 
 .about__btn {
-  display: none;
+  display: none !important;
   max-width: 280px;
 }
 
@@ -58,11 +58,12 @@
   .about__container {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
   .about__img-container {
-    position: static;
+    position: absolute;
+    left: 50%;
     width: auto;
-    flex: 0 0 50%;
   }
   .about__body {
     max-width: none;
@@ -70,11 +71,30 @@
   }
 
   .about__btn {
-    display: flex;
+    display: flex !important;
     margin-top: 50px;
   }
 
   .about__title {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+
+  .about__title {
+    margin-bottom: 60px;
+  }
+
+  .about__desc {
+    margin-bottom: 40px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 85px;
   }
 }

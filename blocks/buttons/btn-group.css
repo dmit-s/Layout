@@ -4,31 +4,22 @@
   justify-content: center;
 }
 
-.group-buttons-primary__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffbd30;
-  min-width: 40px;
-  min-height: 40px;
-  border-radius: 50px;
-}
-.group-buttons-primary__link svg {
-  fill: #161c35;
-  display: block;
-  width: 22px;
-  height: 22px;
-}
-.group-buttons-primary__link:hover {
+.btn-group .btn--circle:first-child {
   background-color: #ff8d30;
 }
-.group-buttons-primary__btn {
-  min-width: 190px;
-  height: 40px;
+.btn-group .btn--circle:first-child:hover {
+  background-color: #f26926;
+}
+.btn-group .btn--circle:nth-child(2) {
   background-color: #ffbd30;
-  border-radius: 50px;
-  font-size: 17px;
-  font-weight: 700;
-  border: 0;
-  cursor: pointer;
+}
+.btn-group .btn--circle:nth-child(2):hover {
+  background-color: #ff8d30;
+}
+
+@media (min-width: 1024px) {
+  .btn--circle {
+    min-width: 50px;
+    min-height: 50px;
+  }
 }

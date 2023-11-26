@@ -25,4 +25,24 @@
 .get-directions__btn {
   border: 3px solid #192144;
 }
-/* asdasd */
+
+@media (min-width: 600px) {
+  .get-directions__contact-links {
+    margin: 0;
+  }
+
+  .get-directions__contact-links .contact-links__link {
+    max-width: none;
+  }
+
+  .get-directions__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .get-directions__btn {
+    max-width: 325px;
+    margin-left: 150px;
+  }
+}

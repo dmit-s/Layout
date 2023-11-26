@@ -70,10 +70,19 @@
   background-color: #ffd74b;
   height: 100%;
   border-radius: 15px;
+  padding: 0 45px;
 }
 
 .interesting__form-btn:hover {
   background-color: #ff8d30;
+}
+
+.interesting__form-btn span {
+  display: none;
+  margin-right: 100px;
+  color: #1d2e5b;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 @media (min-width: 600px) {
@@ -114,5 +123,23 @@
 
   .interesting {
     padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .interesting__desc {
+    max-width: 620px;
+  }
+  .interesting__form-btn span {
+    display: inline-block;
+  }
+
+  .interesting__contact-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-links__link:not(:last-child) {
+    margin-right: 100px;
   }
 }
