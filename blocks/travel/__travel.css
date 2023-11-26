@@ -89,15 +89,22 @@
   height: 100%;
 }
 
+.travel-top__content .content-container {
+  flex: 1 1 auto;
+}
+
 .travel-top__img-container {
   position: relative;
+  max-height: 640px;
+  overflow: hidden;
 }
 .travel-top__img-container::before {
   content: url("/assets/images/traveller-illustration-mobile.png");
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   right: 48px;
 }
+
 .travel-top__img-container img {
   width: 100%;
 }
@@ -127,7 +134,7 @@
 @media (min-width: 600px) {
   .travel {
     background-color: #182044;
-    padding-top: 180px;
+    padding: 180px 0 250px;
   }
 
   .travel__title {
@@ -145,7 +152,7 @@
   }
 
   .travel__buttons {
-    display: none;
+    display: none !important;
   }
 
   .travel-top {
@@ -156,11 +163,12 @@
     position: relative;
     top: -600px;
     left: 0;
-    max-width: 1400px;
-    width: 100%;
-    padding: 0 25px;
-    margin: 0 auto;
     z-index: 10;
+    padding: 0;
+  }
+
+  .travel-bottom__container {
+    position: absolute;
   }
 
   .travel__list {
@@ -168,8 +176,8 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: start;
     transform: translateX(6px);
-    position: absolute;
-    top: 450px;
+    position: relative;
+    bottom: -260px;
     left: 0;
     width: 100%;
   }
@@ -201,5 +209,100 @@
   .travel__list-item:nth-child(4) {
     border-radius: 0 0 15px 15px;
     transform: translateX(-12px) !important;
+  }
+
+  .travel-top__img-container::before {
+    content: url("/assets/images/traveller-tablet.png");
+    top: 40px;
+    right: 50%;
+    transform: translateX(75%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .travel {
+    padding-bottom: 0;
+    background-color: #171c33;
+  }
+
+  .travel-top {
+    padding: 0;
+  }
+  .travel__title {
+    font-size: 60px;
+    text-align: left;
+    line-height: 70px;
+  }
+
+  .travel__report {
+    margin-bottom: 120px;
+  }
+
+  .travel__report-text {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 45px;
+  }
+
+  .travel__report-author {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .travel__list {
+    position: relative;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(12px);
+  }
+
+  .travel__list-item {
+    flex-direction: row;
+    padding: 30px 35px;
+  }
+
+  .travel__list-item:not(:last-child) {
+    padding-right: 47px;
+  }
+
+  .travel__list-item:nth-child(1) {
+    border-radius: 15px 0 0 15px;
+  }
+  .travel__list-item:nth-child(2) {
+    border-radius: 15px 0 0 15px;
+    transform: translateX(-12px) !important;
+  }
+
+  .travel__list-item:nth-child(3) {
+    border-radius: 15px 0 0 15px;
+    transform: translateX(-24px) !important;
+  }
+  .travel__list-item:nth-child(4) {
+    border-radius: 15px;
+    transform: translateX(-36px) !important;
+  }
+  .travel-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+  }
+
+  .travel-bottom__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  .travel-top__img-container::before {
+    content: url("/assets/images/traveller-desktop.png");
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
   }
 }

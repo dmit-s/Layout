@@ -1,24 +1,30 @@
-.container{
-    max-width: 1440px;
-    width: 100%;
-    padding: 0 25px;
-    margin: 0 auto;
-
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
 }
 
-.content-container{
-    padding: 0 25px 
+.content-container {
+  padding: 0 25px;
 }
 
-
-@media (min-width: 600px){
-   .container{
+@media (min-width: 600px) {
+  .container {
     padding: 0 40px;
-   }
+  }
 
-   .content-container{
+  .content-container {
     padding: 0 35px !important;
+  }
 }
 
-}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 60px;
+  }
 
+  .content-container {
+    padding: 0 70px !important;
+  }
+}

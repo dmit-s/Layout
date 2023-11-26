@@ -11,6 +11,14 @@
   position: relative;
 }
 
+.add-profile__img-container {
+  width: 100px;
+}
+
+.add-profile__img-container img {
+  width: 100%;
+}
+
 .add-profile__header {
   display: flex;
   justify-content: space-between;
@@ -66,8 +74,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 34px;
-  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
 }
 .rates-list__item:nth-child(1) .rates-list__item-number {
   background-color: #ff8d30;
@@ -197,7 +205,7 @@
   .add-profile__img-container {
     position: absolute;
     bottom: -10px;
-    right: 85px;
+    right: 125px;
     z-index: 1;
   }
 
@@ -295,6 +303,48 @@
   }
 
   .all-rates__close-btn {
+    font-size: 22px;
     padding: 30px 0;
+  }
+
+  .all-rates__list-item {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .add-profile {
+    padding-top: 100px;
+    padding-bottom: 165px;
+  }
+
+  .rates-list::before {
+    width: 450px;
+  }
+
+  .rates-list::after {
+    width: 450px;
+  }
+
+  .add-profile__title {
+    margin-bottom: 60px;
+  }
+
+  .rates-list__item-desc {
+    min-width: 450px;
+  }
+
+  .add-profile__img-container {
+    width: 200px;
+    height: 200px;
+    top: 185px;
+    right: 20px;
+  }
+
+  .all-rates {
+    max-width: 750px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -700px;
   }
 }
