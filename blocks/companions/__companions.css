@@ -1,16 +1,20 @@
 .companions {
   padding-top: 100px;
   padding-bottom: 30px;
-  background-image: url("../../assets/images/companions/bg-mobile.png");
-  background-size: contain;
-  background-position: top left;
-  background-repeat: no-repeat;
   background-color: #161c35;
   position: relative;
   top: -40px;
   z-index: 4;
   border-radius: 0 0 20px 20px;
 }
+
+.companions__container {
+  background-image: url("../../assets/images/companions/bg-mobile.png");
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
 .companions__cards {
   margin-bottom: 20px;
 }
@@ -176,7 +180,6 @@
 
   .companions {
     padding-bottom: 90px;
-    background-image: url("../../assets/images/companions/bg-tablet.png");
   }
 
   .companions__desc {
@@ -216,17 +219,21 @@
   .companions__cards .content-container {
     display: flex;
   }
+
+  .companions__container{
+    background-image: url("../../assets/images/companions/bg-tablet.png");
+  }
 }
 
 @media (min-width: 1024px) {
   .companions {
     padding: 130px 0;
-    background-image: url("../../assets/images/companions/bg-desktop.png");
   }
 
   .companions__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-image: url("../../assets/images/companions/bg-desktop.png");
   }
 
   .companions-top .content-container {
