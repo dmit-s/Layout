@@ -1,16 +1,21 @@
 .companions {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 30px;
-  background-image: url("/assets/images/copanions-bg.png");
-  background-size: contain;
-  background-position: top 0px right 25px;
-  background-repeat: no-repeat;
   background-color: #161c35;
   position: relative;
   top: -40px;
   z-index: 4;
   border-radius: 0 0 20px 20px;
 }
+
+.companions__container {
+  padding-top: 35px;
+  background-image: url("../../assets/images/companions/bg-mobile.png");
+  background-size: calc(100% - 25px);
+  background-position: right 25px top;
+  background-repeat: no-repeat;
+}
+
 .companions__cards {
   margin-bottom: 20px;
 }
@@ -114,7 +119,7 @@
 }
 
 .companions-top {
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .companions__card-img-container {
@@ -138,12 +143,14 @@
 }
 
 .companions__card-flags {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  transform: translateY(-50%);
 }
 .companions__card-flags img {
   max-width: 35px;
@@ -175,13 +182,19 @@
   }
 
   .companions {
+    padding-top: 90px;
     padding-bottom: 90px;
+  }
+
+  .companions__title {
+    margin-bottom: 55px;
   }
 
   .companions__desc {
     max-width: 440px;
     font-size: 28px;
     line-height: 34px;
+    margin-bottom: 40px;
   }
 
   .companions__subtitle {
@@ -215,16 +228,23 @@
   .companions__cards .content-container {
     display: flex;
   }
+
+  .companions__container {
+    padding-top: 60px;
+    background-image: url("../../assets/images/companions/bg-tablet.png");
+    background-size: calc(100% - 100px);
+    background-position: 35% top;
+  }
 }
 
 @media (min-width: 1024px) {
-  .companions {
-    padding: 130px 0;
-  }
-
   .companions__container {
+    padding-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-image: url("../../assets/images/companions/bg-desktop.png");
+    background-position: 60px top;
+    background-size: 660px;
   }
 
   .companions-top .content-container {
@@ -251,6 +271,7 @@
     display: flex;
     width: 100%;
     padding: 0 !important;
+    justify-content: flex-end;
   }
 
   .companions__show-all {
