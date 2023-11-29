@@ -50,6 +50,10 @@ a {
   text-decoration: none;
 }
 
+picture{
+  display: flex;
+}
+
 body {
   color: #fff;
   font-family: "Blogger Sans", sans-serif;

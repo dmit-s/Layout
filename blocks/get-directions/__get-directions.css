@@ -26,13 +26,15 @@
   border: 3px solid #192144;
 }
 
-@media (min-width: 600px) {
-  .get-directions__contact-links {
-    margin: 0;
-  }
-
+@media (min-width: 600px){
   .get-directions__contact-links .contact-links__link {
     max-width: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .get-directions__contact-links {
+    margin: 0;
   }
 
   .get-directions__container {

@@ -37,7 +37,7 @@ header.scroll .menu-btn__line {
   margin-bottom: 5px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .menu-btn {
     display: none;
   }

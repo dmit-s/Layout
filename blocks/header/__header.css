@@ -81,7 +81,7 @@
   z-index: 1000;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .header__auth-btn {
     display: none;
   }

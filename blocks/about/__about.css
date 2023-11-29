@@ -20,14 +20,18 @@
 .about__img-container {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
-  max-width: 768px;
-  width: 100%;
+    height: 100%;
 }
+
+.about__img-container picture{
+  height: 100%;
+}
+
 .about__img-container img {
-  width: 100%;
-  object-fit: cover;
+  height: 100%;
 }
 
 .about__title {

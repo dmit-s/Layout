@@ -1,9 +1,9 @@
 .companions {
   padding-top: 100px;
   padding-bottom: 30px;
-  background-image: url("/assets/images/copanions-bg.png");
+  background-image: url("../../assets/images/companions/bg-mobile.png");
   background-size: contain;
-  background-position: top 0px right 25px;
+  background-position: top left;
   background-repeat: no-repeat;
   background-color: #161c35;
   position: relative;
@@ -176,6 +176,7 @@
 
   .companions {
     padding-bottom: 90px;
+    background-image: url("../../assets/images/companions/bg-tablet.png");
   }
 
   .companions__desc {
@@ -220,6 +221,7 @@
 @media (min-width: 1024px) {
   .companions {
     padding: 130px 0;
+    background-image: url("../../assets/images/companions/bg-desktop.png");
   }
 
   .companions__container {

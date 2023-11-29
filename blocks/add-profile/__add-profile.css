@@ -76,6 +76,8 @@
   border-radius: 50%;
   min-width: 34px;
   min-height: 34px;
+  width: 34px;
+  height: 34px;
 }
 .rates-list__item:nth-child(1) .rates-list__item-number {
   background-color: #ff8d30;

@@ -4,8 +4,10 @@ const header = document.querySelector(".header");
 const handleChange = (e) => {
   if (e.target.checked) {
     header.classList.add("show-menu");
+    document.body.style.setProperty('overflow-y', 'hidden');
   } else {
     header.classList.remove("show-menu");
+    document.body.style.setProperty('overflow-y', 'auto');
   }
 };
 
@@ -51,9 +53,12 @@ const navLinks = document.querySelectorAll(".nav__link");
 navLinks.forEach((el) => el.addEventListener("click", scrollTo));
 
 function scrollTo(e) {
+  if(menuBtn.checked){
+    menuBtn.click();
+  }
+
   e.preventDefault();
   const target = e.target.getAttribute("href");
-  console.log(target.slice(1));
   document.querySelector(`.${target.slice(1)}`).scrollIntoView({
     behavior: "smooth",
     block: "center",
