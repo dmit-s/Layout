@@ -24,8 +24,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: #161c35;
   position: relative;
   transition: 0.4s;
 }
@@ -37,9 +35,7 @@
 }
 
 @media (min-width: 600px) {
-  .header__container {
-    background-color: #182044;
-  }
+
 
   .header__auth-btn {
     display: inline-block;
@@ -67,7 +63,13 @@
   width: 100%;
 }
 
+.header__logo picture {
+  position: relative;
+  z-index: 1000;
+}
+
 @media (min-width: 600px) {
+
   .header__logo-mobile {
     display: none;
   }
@@ -76,10 +78,7 @@
   }
 }
 
-.header__logo picture {
-  position: relative;
-  z-index: 1000;
-}
+
 
 @media (min-width: 1280px) {
   .header__auth-btn {
@@ -96,5 +95,6 @@
 
   .header__container {
     background-color: transparent;
+
   }
 }
