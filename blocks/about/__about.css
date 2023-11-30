@@ -68,6 +68,9 @@
     position: absolute;
     left: 50%;
     width: auto;
+    transform: translateX(0);
+    z-index: -1;
+      height: auto;
   }
   .about__body {
     max-width: none;
@@ -100,5 +103,10 @@
 
   .about__subtitle {
     margin-bottom: 85px;
+  }
+
+  .about__img-container img {
+    height: auto;
+    width: 100%;
   }
 }
