@@ -106,7 +106,12 @@
   right: 48px;
 }
 
+.travel-top__img-container picture{
+  max-height: 440px;
+}
+
 .travel-top__img-container img {
+  object-fit: cover;
   width: 100%;
 }
 
@@ -217,6 +222,14 @@
     top: 40px;
     right: 50%;
     transform: translateX(75%);
+  }
+
+  .travel-top__img-container picture{
+    max-height: none;
+  }
+  
+  .travel-top__img-container img {
+    object-fit: cover;
   }
 }
 
